@@ -28,6 +28,14 @@
   margin: auto;
 }
 
+header {
+  background-color: rgb(253, 253, 253);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 header .first-episode-header {
   height: 96px;
   display: flex;
@@ -164,7 +172,7 @@ header .first-episode-header .shopping span {
   bottom: 0;
 }
 header .header-line {
-  width: 100%;
+  width: 110%;
   height: 0.5px;
   background-color: rgb(231, 227, 227);
 }
@@ -205,7 +213,7 @@ header .second-episode-header .part-one .all-categories::before {
 header .second-episode-header .part-one .all-categories:hover .all-categories-dropdown {
   display: block;
   margin-top: 28px;
-  animation: fade-in 0.5s;
+  animation: fade-in 0.3s;
 }
 header .second-episode-header .part-one .all-categories .all-categories-dropdown {
   padding: 27px 0 8px 0;
@@ -220,19 +228,14 @@ header .second-episode-header .part-one .all-categories .all-categories-dropdown
   border: 1px solid rgba(175, 160, 160, 0.3);
   border-top: none;
   background-color: rgb(253, 253, 253);
-  bottom: -372.8px;
+  bottom: -373.8px;
   display: none;
-}
-header .second-episode-header .part-one .all-categories .all-categories-dropdown ul {
-  width: 100%;
-}
-header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li {
-  padding: 10px 12px 10px 20px;
 }
 header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li:hover {
   background-color: rgb(235, 235, 232);
 }
 header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li a {
+  padding: 10px 12px 10px 20px;
   text-decoration: none;
   color: rgba(33, 33, 33, 0.6);
   display: flex;
@@ -255,9 +258,6 @@ header .second-episode-header .part-one nav .nav-menu li {
   gap: 2px;
   cursor: pointer;
 }
-header .second-episode-header .part-one nav .nav-menu li img {
-  transition: all 0.5s;
-}
 header .second-episode-header .part-one nav .nav-menu li:nth-child(1) {
   position: relative;
 }
@@ -270,7 +270,7 @@ header .second-episode-header .part-one nav .nav-menu li:nth-child(1)::before {
 }
 header .second-episode-header .part-one nav .nav-menu li:nth-child(1):hover .demos-dropdown-menu {
   display: flex;
-  animation: fade-in 0.6s;
+  animation: fade-in 0.3s;
 }
 header .second-episode-header .part-one nav .nav-menu li:nth-child(1):hover img {
   transform: rotate(-180deg);
@@ -392,4 +392,58 @@ header .second-episode-header .part-two .language .change-lan ul li span {
 }
 header .second-episode-header .part-two .language .change-lan ul li:hover {
   background-color: rgb(235, 235, 232);
+}
+
+.img-slider {
+  position: relative;
+  top: 161px;
+  width: 100%;
+  height: 500px;
+}
+.img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  -webkit-clip-path: circle(0% at 0 50%);
+          clip-path: circle(0% at 0 50%);
+}
+.img-slider .slide.active {
+  -webkit-clip-path: circle(150% at 0 50%);
+          clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+}
+.img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+.img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-slider .navigation .btn {
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.img-slider .navigation .btn.active {
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.second-section {
+  margin-top: 373px;
+  width: 100%;
+  height: 600px;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */

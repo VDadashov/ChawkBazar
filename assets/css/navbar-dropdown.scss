@@ -29,6 +29,17 @@
     }
   }
 
+.all-categories-dropdown{
+    ul{
+        li{
+            &:hover .all-dropdown-menu{
+                display: flex;
+            }
+        }
+    }
+}
+
+
 #men-wear{
     position: relative !important;
 
@@ -43,16 +54,12 @@
 
     &:hover .nav-dropdown-menu-men-wear {
         display: flex;
-        animation: fade-in 0.6s;
+        animation: fade-in 0.3s;
     }
 
     &:hover img{
         transform: rotate(-180deg);
         transition: all 0.5s;
-    }
-
-    &:hover .nav-dropdown-menu-men-wear{
-        display: flex;
     }
 }
 
@@ -70,7 +77,7 @@
 
     &:hover .nav-dropdown-menu-woman-wear {
         display: flex;
-        animation: fade-in 0.6s;
+        animation: fade-in 0.3s;
     }
 
     &:hover img{
@@ -78,19 +85,42 @@
         transition: all 0.5s;
     }
 
-    &:hover .nav-dropdown-menu-woman-wear{
-        display: flex;
-    }
 }
 
-.nav-dropdown-menu-men-wear{
+#pages{
+    position: relative !important;
+
+    &::before {
+        position: absolute;
+        bottom: -12px;
+        content: '';
+        width: 100%;
+        height: 15px;
+    }
+
+
+    &:hover .nav-dropdown-menu-pages {
+        display: block;
+        animation: fade-in 0.3s;
+    }
+
+    &:hover img{
+        transform: rotate(-180deg);
+        transition: all 0.5s;
+    }
+
+}
+
+.all-dropdown-menu{
     position: absolute;
+    z-index: 1;
     width: 1070px;
     border: 2px solid rgba(235, 235, 235,0.8);
     border-top: none;
+    border-left: none;
     display: none;
-    left: -125px;
-    bottom: calc(0px - 410px);
+    left: 240px;
+    bottom: -34px;
 
     ul{
         display: block !important;
@@ -109,6 +139,375 @@
     .nav-dropdown-menu-part-one {
         padding: 24px 0 28px 0;
         width: 214px;
+        background-color: rgb(253, 253, 253);
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(33, 33, 33);
+            a{
+                padding: 6px 20px 6px 20px !important;
+                width: 100%;
+                color: rgb(33, 33, 33);
+                text-decoration: none;
+                display: block;
+            }
+    
+            &:hover{
+                background-color: rgb(235, 235, 232);
+            }
+        }
+    
+        .top-wear {
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block !important;
+                    width: 100% !important;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                }
+            }
+        }
+        ul{
+            padding-top: 10px !important;
+            li{
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+                a{
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(33, 33, 33);
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .nav-dropdown-menu-part-two{
+        padding: 24px 0 28px 0 !important;
+        background-color: rgb(244, 244, 244);
+        width: 214px;
+        p {
+            font-size: 14px;       
+            font-weight: 600;
+            color: rgb(33, 33, 33);
+            a{
+                padding: 6px 20px 6px 20px !important;
+                width: 100%;
+                color: rgb(33, 33, 33);
+                text-decoration: none;
+                display: block;
+            }
+    
+            &:hover{
+                background-color: rgb(235, 235, 232);
+            }
+        }
+    
+        .western-wear {
+            padding-bottom: 16px !important;
+            border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+        ul{
+            padding-top: 10px !important;
+            li{
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+                a{
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(33, 33, 33);
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .nav-dropdown-menu-part-three{
+        padding: 25px 0 28px 0 !important;
+        width: 214px;
+        background-color: rgb(253, 253, 253);
+        p {
+            margin-bottom: 6.6px;           
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(33, 33, 33);
+            a{
+                padding: 6px 20px 6px 20px !important;
+                width: 100%;
+                color: rgb(33, 33, 33);
+                text-decoration: none;
+                display: block;
+            }
+    
+            &:hover{
+                background-color: rgb(235, 235, 232);
+            }
+        }
+    
+        .foot-wear {
+            padding-bottom: 16px !important;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+
+        .sports-active-wear{
+            padding-bottom: 16px !important;
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+    .nav-dropdown-menu-part-four{
+        padding: 25px 0 28px 0 !important;
+        background-color: rgb(244, 244, 244);
+        width: 214px;
+        p {
+            margin-bottom: 6.6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(33, 33, 33);
+            a{
+                padding: 6px 20px 6px 20px !important;
+                width: 100%;
+                color: rgb(33, 33, 33);
+                text-decoration: none;
+                display: block;
+            }
+    
+            &:hover{
+                background-color: rgb(235, 235, 232);
+            }
+        }
+    
+        .lingerie-sleep-more {
+            padding-bottom: 16px !important;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+
+        .belt-scarves-more{
+            padding-bottom: 16px !important;
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .nav-dropdown-menu-part-five{
+        padding: 25px 0 28px 0 !important;
+        width: 214px;
+        background-color: rgb(253, 253, 253);
+        p {
+            margin-bottom: 6.6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(33, 33, 33);
+            a{
+                padding: 6px 20px 6px 20px !important;
+                width: 100%;
+                color: rgb(33, 33, 33);
+                text-decoration: none;
+                display: block;
+            }
+    
+            &:hover{
+                background-color: rgb(235, 235, 232);
+            }
+        }
+    
+        .gadgets {
+            padding-bottom: 16px !important;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+
+        .jewellers{
+            margin-bottom: 10px;
+            padding-bottom: 16px !important;
+            border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+            li {
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+    
+                a {
+                    padding: 6px 20px !important;
+                    display: block;
+                    width: 100%;
+                    color: rgb(90, 90, 90);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+        ul{
+            li{
+                &:hover{
+                    background-color: rgb(235, 235, 232);
+                }
+                a{
+                    padding: 6px 20px;
+                    display: block;
+                    width: 100%;
+                    color: rgb(33, 33, 33);
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-decoration: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.nav-dropdown-menu-men-wear{
+    position: absolute;
+    z-index: 1;
+    width: 1070px;
+    border: 2px solid rgba(235, 235, 235,0.8);
+    border-top: none;
+    display: none;
+    left: -125px;
+    bottom: calc(0px - 409px);
+
+    ul{
+        display: block !important;
+        li{
+            display: block !important;
+            padding: 0 !important;
+            
+            &::before{
+                display: none !important;
+            }
+            a{
+                display: block !important;
+            }
+        }
+    }
+    .nav-dropdown-menu-part-one {
+        padding: 24px 0 28px 0;
+        width: 214px;
+        background-color: rgb(253, 253, 253);
         p {
             font-size: 14px;
             font-weight: 600;
@@ -231,6 +630,7 @@
     .nav-dropdown-menu-part-three{
         padding: 25px 0 28px 0;
         width: 214px;
+        background-color: rgb(253, 253, 253);
         p {
             margin-bottom: 6.6px;           
             font-size: 14px;
@@ -363,6 +763,7 @@
     .nav-dropdown-menu-part-five{
         padding: 25px 0 28px 0;
         width: 214px;
+        background-color: rgb(253, 253, 253);
         p {
             margin-bottom: 6.6px;
             font-size: 14px;
@@ -454,7 +855,7 @@
     border-top: none;
     display: none;
     left: -250px;
-    bottom: calc(0px - 410px);
+    bottom: calc(0px - 409px);
 
     ul{
         display: block !important;
@@ -473,6 +874,7 @@
     .nav-dropdown-menu-part-one {
         padding: 24px 0 28px 0;
         width: 214px;
+        background-color: rgb(253, 253, 253);
         p {
             font-size: 14px;
             font-weight: 600;
@@ -595,6 +997,7 @@
     .nav-dropdown-menu-part-three{
         padding: 25px 0 28px 0;
         width: 214px;
+        background-color: rgb(253, 253, 253);
         p {
             margin-bottom: 6.6px;           
             font-size: 14px;
@@ -727,6 +1130,7 @@
     .nav-dropdown-menu-part-five{
         padding: 25px 0 28px 0;
         width: 214px;
+        background-color: rgb(253, 253, 253);
         p {
             margin-bottom: 6.6px;
             font-size: 14px;
@@ -806,6 +1210,70 @@
                     text-decoration: none;
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+.nav-dropdown-menu-pages {
+    position: absolute;
+    left: 0;
+    bottom: -374px;
+    display: none;
+    width: 240px !important;
+    border: 2px solid rgba(235, 235, 235,0.8);
+    background-color: rgb(253, 253, 253);
+    border-top: none;
+    ul {
+        padding: 24px 0 16px;
+        #users-page{
+            position: relative;
+
+            &:hover ul{
+                display: block;
+                animation: fade-in 0.3s;
+            }
+
+            a{
+                i{
+                    float: right;
+                    margin-top: 4px;
+                    font-size: 12px;
+                }
+            }
+            ul{
+                display: none;
+                padding: 15px 0 14px;
+                border: 2px solid rgba(235, 235, 235,0.8);
+                background-color: rgb(253, 253, 253);
+                border-left: none;
+                position: absolute;
+                top: -17px;
+                right: -184.5px;
+                a{
+                    width: 182px !important;
+                    padding: 6px 14px 6px 28px;
+                }
+            }
+        }
+
+        li {
+            display: block !important;
+            padding: 0px !important;
+            &:hover {
+                background-color: rgb(235, 235, 232);
+                
+            }
+
+            a {
+                padding: 6px 15px;
+                display: block !important;
+                width: 100% !important;
+                color: rgb(90, 90, 90);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-decoration: none;
             }
         }
     }
