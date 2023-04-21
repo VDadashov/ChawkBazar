@@ -6,6 +6,23 @@
   font-family: "Open Sans", sans-serif;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container {
   width: 1405.2px;
   margin: auto;
@@ -85,6 +102,7 @@ header .first-episode-header .search-bar form label input::placeholder {
 header .first-episode-header .wishlist {
   width: 102.6px;
   height: 24px;
+  margin-left: 15px;
   position: relative;
   cursor: pointer;
 }
@@ -111,13 +129,13 @@ header .first-episode-header .wishlist sup {
 header .first-episode-header .wishlist span {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 5px;
 }
 header .first-episode-header .shopping {
   width: 110.34px;
   height: 24px;
   position: relative;
-  left: 48px;
+  margin-left: 30px;
   cursor: pointer;
 }
 header .first-episode-header .shopping img {
@@ -149,4 +167,229 @@ header .header-line {
   width: 100%;
   height: 0.5px;
   background-color: rgb(231, 227, 227);
+}
+header .second-episode-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .second-episode-header .part-one {
+  width: 811px;
+  display: flex;
+  align-items: center;
+}
+header .second-episode-header .part-one .all-categories {
+  width: 150.51px;
+  height: 44px;
+  background-color: rgb(41, 41, 41);
+  color: #fff !important;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-feature-settings: normal;
+  position: relative;
+  cursor: pointer;
+}
+header .second-episode-header .part-one .all-categories::before {
+  position: absolute;
+  bottom: -10px;
+  content: "";
+  width: 100%;
+  height: 10px;
+}
+header .second-episode-header .part-one .all-categories:hover .all-categories-dropdown {
+  display: block;
+  margin-top: 28px;
+  animation: fade-in 0.5s;
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown {
+  padding: 27px 0 8px 0;
+  color: black;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  width: 160%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgba(175, 160, 160, 0.3);
+  border-top: none;
+  background-color: rgb(253, 253, 253);
+  bottom: -372.8px;
+  display: none;
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown ul {
+  width: 100%;
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li {
+  padding: 10px 12px 10px 20px;
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li:hover {
+  background-color: rgb(235, 235, 232);
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li a {
+  text-decoration: none;
+  color: rgba(33, 33, 33, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li a img {
+  width: 21px;
+}
+header .second-episode-header .part-one nav {
+  padding-left: 20px;
+}
+header .second-episode-header .part-one nav .nav-menu {
+  display: flex;
+}
+header .second-episode-header .part-one nav .nav-menu li {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+header .second-episode-header .part-one nav .nav-menu li img {
+  transition: all 0.5s;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1) {
+  position: relative;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1)::before {
+  position: absolute;
+  bottom: -12px;
+  content: "";
+  width: 100%;
+  height: 15px;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1):hover .demos-dropdown-menu {
+  display: flex;
+  animation: fade-in 0.6s;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1):hover img {
+  transform: rotate(-180deg);
+  transition: all 0.5s;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1) .demos-dropdown-menu {
+  padding: 20px 0 18px 0;
+  width: 245px;
+  position: absolute;
+  left: -1px;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgba(175, 160, 160, 0.3);
+  border-top: none;
+  background-color: rgb(253, 253, 253);
+  bottom: -411px;
+  display: none;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1) .demos-dropdown-menu ul {
+  display: inline-block;
+  width: 100%;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1) .demos-dropdown-menu ul li a {
+  width: 100%;
+  color: rgb(90, 90, 90);
+  padding-left: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+header .second-episode-header .part-one nav .nav-menu li:nth-child(1) .demos-dropdown-menu ul li:hover {
+  background-color: rgb(235, 235, 232);
+}
+header .second-episode-header .part-one nav .nav-menu li .nav-menu-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+header .second-episode-header .part-one nav .nav-menu li img {
+  width: 15px;
+  height: 16px;
+  opacity: 0.5;
+}
+header .second-episode-header .part-two {
+  width: 258px;
+  height: 37.6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .second-episode-header .part-two .login {
+  width: 70px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+header .second-episode-header .part-two .login img {
+  width: 18px;
+}
+header .second-episode-header .part-two .language {
+  position: relative;
+  margin-left: 20px;
+  width: 150px;
+  height: 37.6px;
+  border: 1px solid rgba(175, 160, 160, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+header .second-episode-header .part-two .language:focus-within .change-lan {
+  display: block;
+}
+header .second-episode-header .part-two .language img {
+  width: 18px;
+}
+header .second-episode-header .part-two .language img:nth-last-child(1) {
+  width: 17px;
+  margin-left: 4px;
+  opacity: 0.6;
+}
+header .second-episode-header .part-two .language .change-lan {
+  padding: 8px 0;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 160, 160, 0.3);
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+  bottom: -238.8px;
+  display: none;
+}
+header .second-episode-header .part-two .language .change-lan ul li {
+  width: 100%;
+  height: 36px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+}
+header .second-episode-header .part-two .language .change-lan ul li img {
+  margin-right: 7px;
+}
+header .second-episode-header .part-two .language .change-lan ul li span {
+  opacity: 0.6;
+}
+header .second-episode-header .part-two .language .change-lan ul li:hover {
+  background-color: rgb(235, 235, 232);
 }/*# sourceMappingURL=main.css.map */

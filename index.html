@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/navbar-dropdown.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="container">
             <div class="first-episode-header">
                 <img class="logo" src="assets/img/logo.svg" alt="">
-                <ul type = "none">
+                <ul type="none">
                     <li>
                         <a href="#">Deals Today</a>
                         <img class="dt-icon" src="assets/img/thunderbolt.png" alt="">
@@ -35,7 +41,8 @@
                             <span>
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
-                            <input id="search" type="text" placeholder="Search Anything..." aria-label="Search" autocomplete="off">
+                            <input id="search" type="text" placeholder="Search Anything..." aria-label="Search"
+                                autocomplete="off">
                         </label>
                     </form>
                 </div>
@@ -54,11 +61,327 @@
         <div class="header-line"></div>
         <div class="container">
             <div class="second-episode-header">
-                
+                <div class="part-one">
+                    <div class="all-categories">
+                        <i class="fa-solid fa-bars"></i>
+                        <span>All Categories</span>
+                        <div class="all-categories-dropdown">
+                            <ul type="none">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/dress.png" alt="">
+                                        <span>Women's Fashion</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/shirt.png" alt="">
+                                        <span>Men's Fashion</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/watch.png" alt="">
+                                        <span>Watches</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/wallet.png" alt="">
+                                        <span>Wallets</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/school-bag.png" alt="">
+                                        <span>Bags</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/diamond-ring.png" alt="">
+                                        <span>Jewelry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/sunglasses.png" alt="">
+                                        <span>Sunglasses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/sneakers.png" alt="">
+                                        <span>Sneakers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="nav-menu" type="none">
+                            <li>
+                                <a class="nav-menu-link" href="#">Demos</a>
+                                <img src="assets/img/down.png" alt="">
+                                <div class="demos-dropdown-menu">
+                                    <ul type="none">
+                                        <li>
+                                            <a href="#">Modern</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Standard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Minimal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vintage</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Classic</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Trendy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Elegant</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Refined</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contemporary</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ancient</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="men-wear">
+                                <a class="nav-menu-link" href="#">Men Wear</a>
+                                <img src="assets/img/down.png" alt="">
+                                <div class="nav-dropdown-menu-men-wear">
+                                    <div class="nav-dropdown-menu-part-one">
+                                        <p><a href="">Top Wear</a></p>
+                                        <ul class="top-wear" type="none">
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Casual-Shirts</a></li>
+                                            <li><a href="#">Formal-Shirts</a></li>
+                                            <li><a href="#">Blazwers & Coats</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Jackets</a></li>
+                                        </ul>
+                                        <ul type="none">
+                                            <li><a href="#">Belt,Scarves & More</a></li>
+                                            <li><a href="#">Watches & Wearables</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-two">
+                                        <p><a href="#">Western Wear</a></p>
+                                        <ul class="western-wear" type="none">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Jumpsuits</a></li>
+                                            <li><a href="#">Tops,T-shirts & Shirts</a></li>
+                                            <li><a href="#">Shorts & Skirts</a></li>
+                                            <li><a href="#">Shurgs</a></li>
+                                            <li><a href="#">Blazers</a></li>
+                                        </ul>
+                                        <ul type="none">
+                                            <li><a href="#">Belt,Scarves & More</a></li>
+                                            <li><a href="#">Watches & Wearables</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-three">
+                                        <p><a href="#">Foot Wear</a></p>
+                                        <ul class="foot-wear" type="none">
+                                            <li><a href="#">Flats</a></li>
+                                            <li><a href="#">Casual Shoes</a></li>
+                                            <li><a href="#">Heels</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                        </ul>
+                                        <p><a href="#">Sports & Active Wear</a></p>
+                                        <ul class="sports-active-wear" type="none">
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Sports Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-four">
+                                        <p><a href="#">Lingerie & Sleep Wear</a></p>
+                                        <ul class="lingerie-sleep-more" type="none">
+                                            <li><a href="#">Bra</a></li>
+                                            <li><a href="#">Briefs</a></li>
+                                            <li><a href="#">Sleepwear</a></li>
+                                        </ul>
+                                        <p><a href="#">Belt,Scarves & More</a></p>
+                                        <ul class="belt-scarves-more" type="none">
+                                            <li><a href="#">Makeup</a></li>
+                                            <li><a href="#">Skincare</a></li>
+                                            <li><a href="#">Premium Beauty</a></li>
+                                            <li><a href="#">Lipsticks</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-five">
+                                        <p><a href="#">Gadgets</a></p>
+                                        <ul class="gadgets" type="none">
+                                            <li><a href="#">Smart Wearables</a></li>
+                                            <li><a href="#">Headphones</a></li>
+                                        </ul>
+                                        <p><a href="#">Jewellers</a></p>
+                                        <ul class="jewellers" type="none">
+                                            <li><a href="#">Fashion Jewellers</a></li>
+                                            <li><a href="#">Fine Jewellers</a></li>
+                                        </ul>
+                                        <ul type="none">
+                                            <li><a href="#">Belt,Scarves & More</a></li>
+                                            <li><a href="#">Watches & Wearables</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="woman-wear">
+                                <a class="nav-menu-link" href="#">Woman Wear</a>
+                                <img src="assets/img/down.png" alt="">
+                                <div class="nav-dropdown-menu-woman-wear">
+                                    <div class="nav-dropdown-menu-part-one">
+                                        <p><a href="">Top Wear</a></p>
+                                        <ul class="top-wear" type="none">
+                                            <li><a href="#">T-Shirt</a></li>
+                                            <li><a href="#">Casual-Shirts</a></li>
+                                            <li><a href="#">Formal-Shirts</a></li>
+                                            <li><a href="#">Blazwers & Coats</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                            <li><a href="#">Jackets</a></li>
+                                        </ul>
+                                        <ul type="none">
+                                            <li><a href="#">Belt,Scarves & More</a></li>
+                                            <li><a href="#">Watches & Wearables</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-two">
+                                        <p><a href="#">Western Wear</a></p>
+                                        <ul class="western-wear" type="none">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Jumpsuits</a></li>
+                                            <li><a href="#">Tops,T-shirts & Shirts</a></li>
+                                            <li><a href="#">Shorts & Skirts</a></li>
+                                            <li><a href="#">Shurgs</a></li>
+                                            <li><a href="#">Blazers</a></li>
+                                        </ul>
+                                        <ul type="none">
+                                            <li><a href="#">Belt,Scarves & More</a></li>
+                                            <li><a href="#">Watches & Wearables</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-three">
+                                        <p><a href="#">Foot Wear</a></p>
+                                        <ul class="foot-wear" type="none">
+                                            <li><a href="#">Flats</a></li>
+                                            <li><a href="#">Casual Shoes</a></li>
+                                            <li><a href="#">Heels</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                        </ul>
+                                        <p><a href="#">Sports & Active Wear</a></p>
+                                        <ul class="sports-active-wear" type="none">
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Sports Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-four">
+                                        <p><a href="#">Lingerie & Sleep Wear</a></p>
+                                        <ul class="lingerie-sleep-more" type="none">
+                                            <li><a href="#">Bra</a></li>
+                                            <li><a href="#">Briefs</a></li>
+                                            <li><a href="#">Sleepwear</a></li>
+                                        </ul>
+                                        <p><a href="#">Belt,Scarves & More</a></p>
+                                        <ul class="belt-scarves-more" type="none">
+                                            <li><a href="#">Makeup</a></li>
+                                            <li><a href="#">Skincare</a></li>
+                                            <li><a href="#">Premium Beauty</a></li>
+                                            <li><a href="#">Lipsticks</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-dropdown-menu-part-five">
+                                        <p><a href="#">Gadgets</a></p>
+                                        <ul class="gadgets" type="none">
+                                            <li><a href="#">Smart Wearables</a></li>
+                                            <li><a href="#">Headphones</a></li>
+                                        </ul>
+                                        <p><a href="#">Jewellers</a></p>
+                                        <ul class="jewellers" type="none">
+                                            <li><a href="#">Fashion Jewellers</a></li>
+                                            <li><a href="#">Fine Jewellers</a></li>
+                                        </ul>
+                                        <ul type="none">
+                                            <li><a href="#">Belt,Scarves & More</a></li>
+                                            <li><a href="#">Watches & Wearables</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="nav-menu-link" href="#">Search</a>
+                            </li>
+                            <li>
+                                <a class="nav-menu-link" href="#">Shops</a>
+                            </li>
+                            <li id="pages">
+                                <a class="nav-menu-link" href="#">Pages</a>
+                                <img src="assets/img/down.png" alt="">
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="part-two">
+                    <div class="login">
+                        <img src="assets/img/user.png" alt="">
+                        <span>Login</span>
+                    </div>
+                    <div tabindex="0" class="language">
+                        <img src="assets/img/united-states-of-america.png" alt="flag">
+                        <span>English-EN</span>
+                        <img src="assets/img/unfold.png" alt="">
+                        <div class="change-lan">
+                            <ul type="none">
+                                <li>
+                                    <img src="assets/img/saudi-arabia.png" alt="flag">
+                                    <span>Arabic-AR</span>
+                                </li>
+                                <li>
+                                    <img src="assets/img/china.png" alt="flag">
+                                    <span>Chinese-CH</span>
+                                </li>
+                                <li>
+                                    <img src="assets/img/united-states-of-america.png" alt="flag">
+                                    <span>English-EN</span>
+                                </li>
+                                <li>
+                                    <img src="assets/img/germany.png" alt="flag">
+                                    <span>German-Ge</span>
+                                </li>
+                                <li>
+                                    <img src="assets/img/israel.png" alt="flag">
+                                    <span>Hebrew-HE</span>
+                                </li>
+                                <li>
+                                    <img src="assets/img/spain.png" alt="flag">
+                                    <span>Spanish-SP</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="header-line"></div>
     </header>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
