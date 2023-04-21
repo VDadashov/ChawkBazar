@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/navbar-dropdown.css">
 
@@ -1038,25 +1039,93 @@
         <div class="header-line"></div>
     </header>
 
-    <div class="img-slider">
-        <div class="slide active">
-          <img src="assets/img/banner-10.webp" alt="">
+    <section class="first-section">
+        <div class="img-slider">
+            <div class="slide active">
+                <img src="assets/img/banner-10.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner-11.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner-12.webp" alt="">
+            </div>
+            <div class="navigation">
+                <div class="btn active"></div>
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
         </div>
-        <div class="slide">
-          <img src="assets/img/banner-11.webp" alt="">
-        </div>
-        <div class="slide">
-          <img src="assets/img/banner-12.webp" alt="">
-        </div>
-        <div class="navigation">
-          <div class="btn active"></div>
-          <div class="btn"></div>
-          <div class="btn"></div>
-        </div>
-      </div>
+    </section>
 
-    <section class="second-section"></section>
+    <section class="second-section">
+        <div class="container swiper">
+            <h3>Browse Categories</h3>
+            <div class="slide-container">
+              <div class="browse-categories-slide swiper-wrapper">
+                <div class="browse-categories-slide-card swiper-slide">
+                  <a href="#">
+                      <img src="assets/img/bags.png" alt="">
+                      <div class="browse-categories-slide-card-text">
+                          <h4>Bags</h4>
+                          <p>4 Brands,20+ Products</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="browse-categories-slide-card swiper-slide">
+                  <a href="#">
+                      <img src="assets/img/sneakers-icon.png" alt="">
+                      <div class="browse-categories-slide-card-text">
+                          <h4>Sneakers</h4>
+                          <p>6 Brands,20+ Products</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="browse-categories-slide-card swiper-slide">
+                  <a href="#">
+                      <img src="assets/img/woman.png" alt="">
+                      <div class="browse-categories-slide-card-text">
+                          <h4>Woman</h4>
+                          <p>5 Brands,20+ Products</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="browse-categories-slide-card swiper-slide">
+                  <a href="#">
+                      <img src="assets/img/man.png" alt="">
+                      <div class="browse-categories-slide-card-text">
+                          <h4>Man</h4>
+                          <p>4 Brands,20+ Products</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="browse-categories-slide-card swiper-slide">
+                  <a href="#">
+                      <img src="assets/img/woman.png" alt="">
+                      <div class="browse-categories-slide-card-text">
+                          <h4>Woman</h4>
+                          <p>5 Brands,20+ Products</p>
+                      </div>
+                  </a>
+              </div>
+              <div class="browse-categories-slide-card swiper-slide">
+                  <a href="#">
+                      <img src="assets/img/man.png" alt="">
+                      <div class="browse-categories-slide-card-text">
+                          <h4>Man</h4>
+                          <p>4 Brands,20+ Products</p>
+                      </div>
+                  </a>
+              </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+    </section>
 
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

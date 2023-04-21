@@ -394,20 +394,20 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   background-color: rgb(235, 235, 232);
 }
 
-.img-slider {
+.first-section .img-slider {
   position: relative;
   top: 161px;
   width: 100%;
   height: 500px;
 }
-.img-slider .slide {
+.first-section .img-slider .slide {
   z-index: 1;
   position: absolute;
   width: 100%;
   -webkit-clip-path: circle(0% at 0 50%);
           clip-path: circle(0% at 0 50%);
 }
-.img-slider .slide.active {
+.first-section .img-slider .slide.active {
   -webkit-clip-path: circle(150% at 0 50%);
           clip-path: circle(150% at 0 50%);
   transition: 2s;
@@ -415,12 +415,12 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   transition-property: clip-path;
   transition-property: clip-path, -webkit-clip-path;
 }
-.img-slider .slide img {
+.first-section .img-slider .slide img {
   z-index: 1;
   width: 100%;
   border-radius: 5px;
 }
-.img-slider .navigation {
+.first-section .img-slider .navigation {
   z-index: 2;
   position: absolute;
   display: flex;
@@ -428,7 +428,7 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-.img-slider .navigation .btn {
+.first-section .img-slider .navigation .btn {
   background: rgba(255, 255, 255, 0.5);
   width: 12px;
   height: 12px;
@@ -436,14 +436,134 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   border-radius: 50%;
   cursor: pointer;
 }
-.img-slider .navigation .btn.active {
+.first-section .img-slider .navigation .btn.active {
   background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.first-section .img-slider {
+  position: relative;
+  top: 161px;
+  width: 100%;
+  height: 500px;
+}
+.first-section .img-slider .slide {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  -webkit-clip-path: circle(0% at 0 50%);
+          clip-path: circle(0% at 0 50%);
+}
+.first-section .img-slider .slide.active {
+  -webkit-clip-path: circle(150% at 0 50%);
+          clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+}
+.first-section .img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+.first-section .img-slider .navigation {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: -160px;
+  left: 6%;
+  transform: translateX(-6%);
+}
+.first-section .img-slider .navigation .btn {
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 16px;
+  height: 16px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.first-section .img-slider .navigation .btn.active {
+  background: #040404;
+  width: 30px;
+  border-radius: 20px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .second-section {
-  margin-top: 373px;
-  width: 100%;
-  height: 600px;
-  background-color: red;
+  margin-top: 421px;
+  margin-bottom: 30px;
+}
+.second-section .swiper h3 {
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.second-section .swiper .slide-container {
+  overflow: hidden;
+}
+.second-section .swiper .slide-container .browse-categories-slide {
+  display: flex;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card {
+  width: 297.66px;
+  background-color: rgb(247, 247, 247);
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a {
+  padding: 32px 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a img {
+  width: 48px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 22.5px 0 27px;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a .browse-categories-slide-card-text {
+  margin-inline: 11.325px;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a .browse-categories-slide-card-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(33, 33, 33);
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a .browse-categories-slide-card-text p {
+  font-size: 14px;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  color: rgb(90, 90, 90);
+}
+.second-section .swiper .swiper-button-next {
+  right: 2px;
+  top: 68%;
+}
+.second-section .swiper .swiper-button-prev {
+  left: 2px;
+  top: 68%;
+}
+.second-section .swiper .swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.second-section .swiper .swiper-navBtn:hover {
+  background-color: rgb(90, 90, 90);
+  color: #fff;
+}
+.second-section .swiper .swiper-navBtn::before {
+  font-size: 14px;
+  font-weight: 700;
+}
+.second-section .swiper .swiper-navBtn::after {
+  font-size: 14px;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
