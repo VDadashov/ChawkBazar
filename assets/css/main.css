@@ -24,7 +24,7 @@
   }
 }
 .container {
-  width: 1405.2px;
+  max-width: 1405.2px;
   margin: auto;
 }
 
@@ -494,21 +494,47 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   margin-top: 421px;
   margin-bottom: 30px;
 }
-.second-section .swiper h3 {
+.second-section .container h3 {
   margin-bottom: 28px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
-.second-section .swiper .slide-container {
-  overflow: hidden;
+.second-section .swiper {
+  max-width: 1455px;
 }
-.second-section .swiper .slide-container .browse-categories-slide {
-  display: flex;
+.second-section .swiper .slide-container {
+  margin: 0 25px;
+  overflow: hidden;
 }
 .second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card {
   width: 297.66px;
   background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  position: relative;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card:hover .cardBox-link {
+  display: flex;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card .cardBox-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 90, 90, 0.55);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  border-radius: 10px;
+  animation: fade-in 0.1s;
+}
+.second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card .cardBox-link i {
+  color: #fff;
+  font-size: 30px;
+  animation: fade-in 0.3s;
 }
 .second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a {
   padding: 32px 16px;
@@ -521,7 +547,7 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   height: 35px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 0 22.5px 0 27px;
+  margin: 0 22.5px;
 }
 .second-section .swiper .slide-container .browse-categories-slide .browse-categories-slide-card a .browse-categories-slide-card-text {
   margin-inline: 11.325px;
@@ -539,12 +565,10 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   color: rgb(90, 90, 90);
 }
 .second-section .swiper .swiper-button-next {
-  right: 2px;
-  top: 68%;
+  right: 5px;
 }
 .second-section .swiper .swiper-button-prev {
-  left: 2px;
-  top: 68%;
+  left: 5px;
 }
 .second-section .swiper .swiper-navBtn {
   color: #000;

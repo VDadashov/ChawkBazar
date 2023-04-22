@@ -48,7 +48,7 @@
 
 
 .container {
-    width: 1405.200px;
+    max-width: 1405.200px;
     margin: auto;
 }
 
@@ -572,37 +572,74 @@ header {
     }
 }
 
-
 .second-section {
     margin-top: 421px;
     margin-bottom: 30px;
-    .swiper {
 
-        h3{
+    .container{
+        h3 {
             margin-bottom: 28px;
             font-size: 30px;
             font-weight: 700;
             line-height: 36px;
         }
+    }
+
+    .swiper {
+        max-width: 1455px;
+
         .slide-container {
+            margin: 0 25px;
             overflow: hidden;
+
             .browse-categories-slide {
-                display: flex;
+
+                // display: flex;
                 .browse-categories-slide-card {
                     width: 297.66px;
                     background-color: rgb(247, 247, 247);
+                    border-radius: 10px;
+                    position: relative;
+
+                    &:hover .cardBox-link{
+                        display: flex;
+                        
+                    }
+                    
+                    .cardBox-link{
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgb(90, 90, 90,0.55);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        display: none;
+                        border-radius: 10px;
+
+                        
+                        animation: fade-in 0.1s;
+                        i{
+                            color: #fff;
+                            font-size: 30px;
+                            animation: fade-in 0.3s;
+                        }
+                        
+                    }
 
                     a {
                         padding: 32px 16px;
                         display: flex;
                         align-items: center;
                         text-decoration: none;
-
                         img {
                             width: 48px;
                             height: 35px;
                             object-fit: contain;
-                            margin:0 22.5px 0 27px;
+                            margin: 0 22.5px;
                         }
 
                         .browse-categories-slide-card-text {
@@ -627,14 +664,12 @@ header {
             }
         }
 
-        .swiper-button-next{
-            right: 2px;
-            top: 68%;
+        .swiper-button-next {
+            right: 5px;
         }
 
-        .swiper-button-prev{
-            left: 2px;
-            top: 68%;
+        .swiper-button-prev {
+            left: 5px;
         }
 
         .swiper-navBtn {
@@ -646,20 +681,21 @@ header {
             border-radius: 50%;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 
-            &:hover{
+            &:hover {
                 background-color: rgb(90, 90, 90);
                 color: #fff;
             }
 
-            &::before{
+            &::before {
                 font-size: 14px;
                 font-weight: 700;
             }
 
-            &::after{
+            &::after {
                 font-size: 14px;
                 font-weight: 700;
             }
         }
     }
 }
+
