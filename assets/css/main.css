@@ -677,6 +677,38 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   position: relative;
   margin-bottom: 27px;
   border-radius: 10px;
+  cursor: pointer;
+}
+.fourth-section .container .tab-list .tab-list-content-one .product-card-content .product-card .product-card-in-addition {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.fourth-section .container .tab-list .tab-list-content-one .product-card-content .product-card .product-card-in-addition .dis-count-percent-box {
+  width: 64.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+}
+.fourth-section .container .tab-list .tab-list-content-one .product-card-content .product-card .product-card-in-addition .new-arriwal-exist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgb(178, 103, 136);
+  color: #fff;
 }
 .fourth-section .container .tab-list .tab-list-content-one .product-card-content .product-card .hover-card-info {
   position: absolute;
@@ -1000,6 +1032,7 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   position: relative;
   margin-bottom: 27px;
   border-radius: 10px;
+  cursor: pointer;
 }
 .eighth-section .container .tab-list .tab-list-content-two .product-card-content .product-card .product-card-in-addition {
   display: flex;
@@ -1133,4 +1166,34 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   line-height: 24px;
   color: rgb(33, 33, 33);
   margin-top: 2px;
+}
+
+.ninth-section {
+  margin-bottom: 64px;
+}
+.ninth-section .container a {
+  text-decoration: none;
+}
+.ninth-section .container a img {
+  width: 100%;
+  height: 231.863px;
+}
+
+.tenth-section .container h3 {
+  margin-top: -8px;
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.tenth-section .container .trending-collection {
+  display: flex;
+  gap: 1.75rem;
+}
+.tenth-section .container .trending-collection a {
+  text-decoration: none;
+}
+.tenth-section .container .trending-collection a img {
+  width: 445.06px;
+  height: 521.79px;
 }/*# sourceMappingURL=main.css.map */

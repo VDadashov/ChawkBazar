@@ -112,6 +112,7 @@ let firstTabListproducts = [
       price: '$20.00',
       disCountPercent: '$17.99',
     },
+    newArrival : true
   },
   {
     imgUrl: `assets/img/p-2.webp`,
@@ -122,6 +123,7 @@ let firstTabListproducts = [
       price: '$40.00',
       disCountPercent: '$30.00',
     },
+    newArrival : false,
   },
   {
     imgUrl: `assets/img/p-3.webp`,
@@ -132,6 +134,7 @@ let firstTabListproducts = [
       price: '$32.00',
       disCountPercent: '$25.00',
     },
+    newArrival : true
   },
   {
     imgUrl: `assets/img/p-4.webp`,
@@ -142,6 +145,7 @@ let firstTabListproducts = [
       price: '$20.00',
       disCountPercent: null,
     },
+    newArrival : false,
   },
   {
     imgUrl: `assets/img/p-5.webp`,
@@ -152,6 +156,7 @@ let firstTabListproducts = [
       price: '$16.00',
       disCountPercent: '$12.00',
     },
+    newArrival : false,
   },
   {
     imgUrl: `assets/img/p-6.webp`,
@@ -162,6 +167,7 @@ let firstTabListproducts = [
       price: '$80.00',
       disCountPercent: '$60.00',
     },
+    newArrival : true
   },
   {
     imgUrl: `assets/img/p-7.webp`,
@@ -172,6 +178,7 @@ let firstTabListproducts = [
       price: '$18.99',
       disCountPercent: '$12.99',
     },
+    newArrival : false
   },
   {
     imgUrl: `assets/img/p-8.webp`,
@@ -182,6 +189,7 @@ let firstTabListproducts = [
       price: '$23.00',
       disCountPercent: '$13.00',
     },
+    newArrival : true
   },
 ]
 
@@ -192,25 +200,40 @@ let womansCollection = document.querySelector('.womans-collection');
 let kidsCollection = document.querySelector('.kids-collection');
 
 
-getTabListData(firstTabListproducts, allCollectionOne);
-getTabListData(firstTabListproducts, mensCollection);
-getTabListData(firstTabListproducts, womansCollection);
-getTabListData(firstTabListproducts, kidsCollection);
+getTabListDataOne(firstTabListproducts, allCollectionOne);
+getTabListDataOne(firstTabListproducts, mensCollection);
+getTabListDataOne(firstTabListproducts, womansCollection);
+getTabListDataOne(firstTabListproducts, kidsCollection);
 
-function getTabListData(products, productContent) {
+
+function getTabListDataOne(products, productContent) {
   try {
     for (let i = 0; i < products.length; i++) {
       if (products[i].totalPrice.disCountPercent != null) {
-        productContent.innerHTML += `<div class='product-card'><div class="hover-card-info">
-      <div class="product-card-view">
-        <img src="assets/img/image.png" alt="">
-      </div>
-      <div class="product-card-wishlist">
-        <img src="assets/img/heart.png" alt="">
-      </div>
-      <div class="product-card-modal">
-        <img src="assets/img/left-and-right-arrows.png" alt="">
-      </div>
+        let x = products[i].totalPrice.disCountPercent;
+        let y = products[i].totalPrice.price;
+        let result = 100 - Math.round(Number(x.slice(1, x.length)) / Number(y.slice(1, y.length)) * 100);
+
+        if (products[i].newArrival == true) {
+          productContent.innerHTML += `<div class='product-card'>
+        <div class="product-card-in-addition">
+          <p class="dis-count-percent-box">
+            ${result}% OFF
+          </p>
+          <p class="new-arriwal-exist">
+            New Arrival
+          </p>
+        </div>
+        <div class="hover-card-info">
+        <div class="product-card-view">
+            <img src="assets/img/heart.png" alt="">
+        </div>
+        <div class="product-card-wishlist">
+            <img src="assets/img/heart.png" alt="">
+        </div>
+        <div class="product-card-modal">
+            <img src="assets/img/left-and-right-arrows.png" alt="">
+        </div>
     </div>
     <div class="product-card-img">
       <img src="${products[i].imgUrl}" alt="${products[i].title}" title="${products[i].title}">
@@ -226,17 +249,50 @@ function getTabListData(products, productContent) {
         <del class="price">${products[i].totalPrice.price}</del>
         <span class="discount-price">${products[i].totalPrice.disCountPercent}</span>
         </div></div>`
-      } else {
+        }else{
+          productContent.innerHTML += `<div class='product-card'>
+        <div class="product-card-in-addition">
+          <p class="dis-count-percent-box">
+            ${result}% OFF
+          </p>
+        </div>
+        <div class="hover-card-info">
+        <div class="product-card-view">
+            <img src="assets/img/heart.png" alt="">
+        </div>
+        <div class="product-card-wishlist">
+            <img src="assets/img/heart.png" alt="">
+        </div>
+        <div class="product-card-modal">
+            <img src="assets/img/left-and-right-arrows.png" alt="">
+        </div>
+    </div>
+    <div class="product-card-img">
+      <img src="${products[i].imgUrl}" alt="${products[i].title}" title="${products[i].title}">
+    </div>
+    <div class="product-card-text">
+      <div class="favorite-point">
+        <img src="assets/img/star.png" alt="">
+          <span>${products[i].favoritePoint}</span>
+      </div>
+      <h2 class="title">${products[i].title}</h2>
+      <p class="content">${products[i].description}</p>
+      <div class="total-price">
+        <del class="price">${products[i].totalPrice.price}</del>
+        <span class="discount-price">${products[i].totalPrice.disCountPercent}</span>
+        </div></div>`
+        }
+      }else {
         productContent.innerHTML += `<div class='product-card'><div class="hover-card-info">
-      <div class="product-card-view">
-        <img src="assets/img/image.png" alt="">
-      </div>
-      <div class="product-card-wishlist">
-        <img src="assets/img/heart.png" alt="">
-      </div>
-      <div class="product-card-modal">
-        <img src="assets/img/left-and-right-arrows.png" alt="">
-      </div>
+        <div class="product-card-view">
+            <img src="assets/img/heart.png" alt="">
+        </div>
+        <div class="product-card-wishlist">
+            <img src="assets/img/heart.png" alt="">
+        </div>
+        <div class="product-card-modal">
+            <img src="assets/img/left-and-right-arrows.png" alt="">
+        </div>
     </div>
     <div class="product-card-img">
       <img src="${products[i].imgUrl}" alt="">
@@ -252,10 +308,11 @@ function getTabListData(products, productContent) {
         <span class="discount-price">${products[i].totalPrice.price}</span>
         </div></div>`
       }
+    
     }
   } catch (error) {
     console.log('kidsCollection data si gelmedi');
-  }
+  }  
 }
 
 //#endregion
@@ -292,6 +349,7 @@ let swiper2 = new Swiper(".fifth-section-content-carousel-container", {
 
 //#endregion
 
+//#region tablistTwo-js
 
 let tabLiTwo = document.querySelectorAll('.tab-li-two');
 let tabLiContentTwo = document.querySelectorAll('.tab-list-content-two')
@@ -432,12 +490,12 @@ let bestSellers = document.querySelector('.best-sellers');
 let featured = document.querySelector('.featured');
 
 
-getTabListData(secondTabListproducts, allCollectionTwo);
-getTabListData(secondTabListproducts, flashSale);
-getTabListData(secondTabListproducts, bestSellers);
-getTabListData(secondTabListproducts, featured);
+getTabListDataTwo(secondTabListproducts, allCollectionTwo);
+getTabListDataTwo(secondTabListproducts, flashSale);
+getTabListDataTwo(secondTabListproducts, bestSellers);
+getTabListDataTwo(secondTabListproducts, featured);
 
-function getTabListData(products, productContent) {
+function getTabListDataTwo(products, productContent) {
   try {
     for (let i = 0; i < products.length; i++) {
       if (products[i].totalPrice.disCountPercent != null) {
@@ -536,5 +594,9 @@ function getTabListData(products, productContent) {
     console.log('kidsCollection data si gelmedi');
   }  
 }
+
+//#endregion
+
+
 
 

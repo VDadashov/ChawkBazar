@@ -802,6 +802,40 @@ header {
                         position: relative;
                         margin-bottom: 27px;
                         border-radius: 10px;
+                        cursor: pointer;
+
+                        .product-card-in-addition{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+                            position: absolute;
+                            top: 20px;
+                            left: 20px;
+
+                            .dis-count-percent-box{
+                                width: 64.5px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 6px;
+                                padding: 4px 0;
+                                font-size: 12px;
+                                line-height: 16px;
+                                background-color: rgb(33, 33, 33);
+                                color: #fff;
+                            }
+                            .new-arriwal-exist{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 12px;
+                                line-height: 16px;
+                                padding: 4px 8px;
+                                border-radius: 6px;
+                                background-color: rgb(178, 103, 136);
+                                color: #fff;
+                            }
+                        }
 
                         .hover-card-info {
                             position: absolute;
@@ -1192,6 +1226,7 @@ header {
                         position: relative;
                         margin-bottom: 27px;
                         border-radius: 10px;
+                        cursor: pointer;
 
                         .product-card-in-addition{
                             display: flex;
@@ -1347,6 +1382,42 @@ header {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+.ninth-section{
+    margin-bottom: 64px;
+    .container{
+        a{
+            text-decoration: none;
+            img{
+                width: 100%;
+                height: 231.863px;
+            }
+        }
+    }
+}
+
+.tenth-section{
+    .container{
+        h3{
+            margin-top: -8px;
+            margin-bottom: 28px;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+        .trending-collection{
+            display: flex;
+            gap: 1.75rem;
+            a{
+                text-decoration: none;
+                img{
+                    width: 445.06px;
+                    height: 521.79px;
                 }
             }
         }
