@@ -1001,6 +1001,37 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   margin-bottom: 27px;
   border-radius: 10px;
 }
+.eighth-section .container .tab-list .tab-list-content-two .product-card-content .product-card .product-card-in-addition {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.eighth-section .container .tab-list .tab-list-content-two .product-card-content .product-card .product-card-in-addition .dis-count-percent-box {
+  width: 64.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+}
+.eighth-section .container .tab-list .tab-list-content-two .product-card-content .product-card .product-card-in-addition .new-arriwal-exist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgb(178, 103, 136);
+  color: #fff;
+}
 .eighth-section .container .tab-list .tab-list-content-two .product-card-content .product-card .hover-card-info {
   position: absolute;
   top: 98%;
