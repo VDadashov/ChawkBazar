@@ -776,6 +776,8 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
 .fourth-section .container .tab-list .tab-list-content .product-card-content .product-card .product-card-content .total-price {
   display: flex;
   flex-direction: column;
+  height: 48px;
+  margin-top: 6px;
 }
 .fourth-section .container .tab-list .tab-list-content .product-card-content .product-card .product-card-content .total-price del {
   font-size: 16px;
@@ -788,6 +790,7 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   font-weight: 600;
   line-height: 24px;
   color: rgb(33, 33, 33);
+  margin-top: 2px;
 }
 
 .fifth-section {
