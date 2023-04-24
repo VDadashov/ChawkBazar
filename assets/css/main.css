@@ -51,6 +51,9 @@ header .first-episode-header {
   display: flex;
   align-items: center;
 }
+header .first-episode-header a img {
+  margin-top: 5px;
+}
 header .first-episode-header ul {
   display: flex;
   align-items: center;
@@ -240,6 +243,9 @@ header .second-episode-header .part-one .all-categories .all-categories-dropdown
   background-color: rgb(253, 253, 253);
   bottom: -373.8px;
   display: none;
+}
+header .second-episode-header .part-one .all-categories .all-categories-dropdown p a {
+  color: rgb(33, 33, 33) !important;
 }
 header .second-episode-header .part-one .all-categories .all-categories-dropdown ul li:hover {
   background-color: rgb(235, 235, 232);
@@ -609,7 +615,10 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   display: flex;
   justify-content: space-between;
 }
-.third-section .container .collection-img img {
+.third-section .container .collection-img a {
+  text-decoration: none;
+}
+.third-section .container .collection-img a img {
   width: 681.6px;
   height: 331.163px;
 }
@@ -1179,6 +1188,9 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
   height: 231.863px;
 }
 
+.tenth-section {
+  margin-bottom: 64px;
+}
 .tenth-section .container h3 {
   margin-top: -8px;
   margin-bottom: 28px;
@@ -1196,4 +1208,511 @@ header .second-episode-header .part-two .language .change-lan ul li:hover {
 .tenth-section .container .trending-collection a img {
   width: 445.06px;
   height: 521.79px;
+}
+
+.eleventh-section {
+  margin-bottom: 64px;
+}
+.eleventh-section .container h3 {
+  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.eleventh-section .swiper {
+  max-width: 1441px;
+}
+.eleventh-section .swiper .eleventh-section-content-container {
+  margin: 0 25px;
+  overflow: hidden;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card {
+  margin-top: 10px;
+  width: 255.85px;
+  transition: all 0.5s;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-in-addition {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-in-addition .dis-count-percent-box {
+  width: 64.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-in-addition .new-arriwal-exist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgb(178, 103, 136);
+  color: #fff;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .hover-card-info {
+  position: absolute;
+  top: 98%;
+  transform: translateY(-98%);
+  right: 15px;
+  gap: 8px;
+  display: none;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .hover-card-info > * {
+  animation: fadeDown 1s ease-in-out;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .hover-card-info img {
+  width: 17px;
+  height: 17px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .hover-card-info .product-card-wishlist {
+  width: 52px;
+  height: 40px;
+  background-color: rgb(241, 243, 244);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  animation: fadeDown 0.8s ease-in-out;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .hover-card-info .product-card-modal {
+  width: 52px;
+  height: 40px;
+  background-color: rgb(246, 245, 244);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  animation: fadeDown 1.1s ease-in-out;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card:hover .hover-card-info {
+  display: flex;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-img {
+  margin-bottom: 14px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-img img {
+  width: 255.85px;
+  height: 255.85px;
+  border-radius: 10px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text .favorite-point {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text .favorite-point img {
+  width: 18px;
+  height: 18px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text .favorite-point span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text h2 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(33, 33, 33);
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text p {
+  font-size: 14px;
+  line-height: 22.25px;
+  color: rgb(90, 90, 90);
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text .total-price {
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  margin-top: 6px;
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text .total-price del {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(112, 112, 112);
+}
+.eleventh-section .swiper .eleventh-section-content-container .product-card-content .product-card .product-card-text .total-price span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(33, 33, 33);
+  margin-top: 2px;
+}
+.eleventh-section .swiper .swiper-button-next {
+  right: 5px;
+}
+.eleventh-section .swiper .swiper-button-prev {
+  left: 5px;
+}
+.eleventh-section .swiper .swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.eleventh-section .swiper .swiper-navBtn:hover {
+  background-color: rgb(90, 90, 90);
+  color: #fff;
+}
+.eleventh-section .swiper .swiper-navBtn::before {
+  font-size: 14px;
+  font-weight: 700;
+}
+.eleventh-section .swiper .swiper-navBtn::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.the-chawkBazar-App .container .the-chawkBazar-App-content {
+  background-image: url(../img/app-pattern.png);
+  padding: 56px 96px 0px 96px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text {
+  width: 576px;
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text h3 {
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgb(33, 33, 33);
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text h2 {
+  color: rgb(33, 33, 33);
+  margin-bottom: 52px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 66px;
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text .the-chawkBazar-App-link {
+  display: flex;
+  gap: 14px;
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text .the-chawkBazar-App-link a img {
+  width: 167px;
+  height: 48px;
+  border-radius: 6px;
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text .the-chawkBazar-App-link a:nth-child(2) img {
+  width: 162px;
+  border-radius: 6px;
+}
+.the-chawkBazar-App .container .the-chawkBazar-App-content .the-chawkBazar-App-text .the-chawkBazar-App-link a:hover {
+  opacity: 0.65;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.testimonial {
+  margin-bottom: 64px;
+}
+.testimonial .testimonial-content {
+  max-width: 1441px;
+}
+.testimonial .testimonial-content .testimonial-content-container {
+  margin: 0 25px;
+  overflow: hidden;
+  position: relative;
+}
+.testimonial .testimonial-content .testimonial-content-container h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card {
+  padding: 32px;
+  width: 440.325px;
+  height: 281px;
+  box-shadow: 0px 0px 20px rgba(20, 19, 19, 0.08);
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 99px;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-title {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex-grow: 0.65;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 4px;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-title span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-point {
+  display: flex;
+  align-items: center;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-point img {
+  width: 14px;
+  height: 14px;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card .testimonial-card-text .testimonial-card-text-point span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.testimonial .testimonial-content .testimonial-content-container .testimonial-card-content .testimonial-card p {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.testimonial .testimonial-content .swiper-button-next {
+  right: 25px;
+  top: 25px !important;
+}
+.testimonial .testimonial-content .swiper-button-prev {
+  right: 125px !important;
+  top: 25px !important;
+  left: auto;
+}
+.testimonial .testimonial-content .swiper-navBtn {
+  color: #000;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.testimonial .testimonial-content .swiper-navBtn:hover {
+  background-color: rgb(90, 90, 90);
+  color: #fff;
+}
+.testimonial .testimonial-content .swiper-navBtn::before {
+  font-size: 14px;
+  font-weight: 700;
+}
+.testimonial .testimonial-content .swiper-navBtn::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+.testimonial .testimonial-content .swiper-scrollbar {
+  width: 96.4%;
+  height: 4px;
+  margin-top: 65px !important;
+  margin: 0 auto;
+}
+.testimonial .testimonial-content .swiper-pagination-fraction {
+  position: absolute;
+  top: 7px;
+  right: 68px;
+  left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.instagram-inbox {
+  margin-bottom: 64px;
+}
+.instagram-inbox .container .instagram-inbox-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.instagram-inbox .container .instagram-inbox-content .instagram-inbox-card a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  width: 228.54px;
+  height: 228.54px !important;
+  border-radius: 10px;
+  z-index: 1;
+}
+.instagram-inbox .container .instagram-inbox-content .instagram-inbox-card a .instagram-inbox-link {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  animation: fade-in 0.35;
+}
+.instagram-inbox .container .instagram-inbox-content .instagram-inbox-card a .instagram-inbox-link i {
+  font-size: 60px;
+  color: #fff;
+  animation: fade-in 0.4s;
+}
+.instagram-inbox .container .instagram-inbox-content .instagram-inbox-card a:hover .instagram-inbox-link {
+  display: flex;
+}
+.instagram-inbox .container .instagram-inbox-content .instagram-inbox-card a img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.instagram-inbox .container .instagram-inbox-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.instagram-inbox .container .instagram-inbox-input .instagram-inbox-input-text h3 {
+  margin-bottom: 14px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgb(33, 33, 33);
+}
+.instagram-inbox .container .instagram-inbox-input .instagram-inbox-input-text p {
+  font-size: 14px;
+  line-height: 28px;
+  color: rgb(90, 90, 90);
+}
+.instagram-inbox .container .instagram-inbox-input form {
+  display: flex;
+}
+.instagram-inbox .container .instagram-inbox-input form input {
+  padding: 8px 28px;
+  width: 407.188px;
+  height: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(29, 30, 31);
+  background-color: #fff;
+  border: 1px solid rgba(90, 90, 90, 0.2);
+  outline: none;
+  border-radius: 6px;
+}
+.instagram-inbox .container .instagram-inbox-input form input:focus-within {
+  border: 1px solid rgb(66, 66, 66);
+}
+.instagram-inbox .container .instagram-inbox-input form button {
+  margin-left: 8px;
+  padding: 16px 32px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.instagram-inbox .container .instagram-inbox-input form button:hover {
+  opacity: 0.85;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.instagram-inbox .container .instagram-inbox-input form button:hover span {
+  opacity: 1;
+}
+.instagram-inbox .container .instagram-inbox-input form button span {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer .container .footer-content-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+footer .container .footer-content-one ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+footer .container .footer-content-one ul li i {
+  color: rgb(90, 90, 90);
+}
+footer .container .footer-content-one ul li span {
+  color: rgb(90, 90, 90);
+}
+footer .container .footer-content-one ul li a {
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+}
+footer .container .footer-content-one .footer-chawk-bazar {
+  width: 383.2px;
+  height: 177.2px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer .container .footer-content-one .footer-chawk-bazar p {
+  width: 334px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer .container .footer-content-one .footer-chawk-bazar .footer-chawk-bazar-social-media {
+  display: flex;
+  flex-direction: row;
+}
+footer .container .footer-content-one .footer-chawk-bazar .footer-chawk-bazar-social-media .footer-chawk-bazar-social-media-exist {
+  margin-right: 14px;
+}
+footer .container .footer-content-one .footer-chawk-bazar .footer-chawk-bazar-social-media .footer-chawk-bazar-social-media-exist i {
+  font-size: 15px;
+}
+footer .container .footer-content-one .footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */

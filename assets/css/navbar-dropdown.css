@@ -116,7 +116,7 @@
 .all-dropdown-menu .nav-dropdown-menu-part-one p {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(33, 33, 33);
+  color: rgb(33, 33, 33) !important;
 }
 .all-dropdown-menu .nav-dropdown-menu-part-one p a {
   padding: 6px 20px 6px 20px !important;

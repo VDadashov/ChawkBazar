@@ -597,6 +597,69 @@ function getTabListDataTwo(products, productContent) {
 
 //#endregion
 
+// let swiperfFour = new Swiper(".eleventh-section-content-container", {
+//   slidesPerView: 3,
+//   spaceBetween: 10,
+//   sliderPerGroup: 3,
+//   loop: true,
+//   centerSlide: "true",
+//   fade: "true",
+//   grabCursor: "true",
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     520: {
+//       slidesPerView: 2,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//     },
+//     1000: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
+
+let swiperfour = new Swiper(".testimonial-content-container", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  sliderPerGroup: 3,
+  loop: true,
+  autoHeight : true,
+  pagination: {
+    el: ".swiper-pagination-fraction",
+    clickable: true,
+    dynamicBullets: true,
+    type : 'fraction'
+  },
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 
