@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1391px;
+  margin: 0 auto;
+}
+
+#product-filters {
+  padding-top: 191px;
+}
+#product-filters .container .product-filters-content {
+  width: 288px;
+}
+#product-filters .container .product-filters-content a {
+  text-decoration: none;
+}
+#product-filters .container .product-filters-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: rgb(33, 33, 33);
+}
+#product-filters .container .product-filters-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(33, 33, 33);
+  margin-bottom: 28px;
+}
+#product-filters .container .product-filters-content label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+#product-filters .container .product-filters-content label:hover {
+  cursor: pointer;
+}
+#product-filters .container .product-filters-content label:nth-child(2) {
+  margin: 0;
+}
+#product-filters .container .product-filters-content label input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgb(243, 238, 238) !important;
+  outline: none;
+  background-color: #000;
+  border-radius: 6px;
+}
+#product-filters .container .product-filters-content label span {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(33, 33, 33);
+}
+#product-filters .container .product-filters-content #clear-btn {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(90, 90, 90);
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+#product-filters .container .product-filters-content #clear-btn:hover {
+  color: rgb(33, 33, 33);
+}
+#product-filters .container .product-filters-content .product-filters-part-one {
+  padding-bottom: 28px;
+}
+#product-filters .container .product-filters-content .product-filters-part-one .product-filters-part-one-content {
+  display: flex;
+  gap: 10px;
+}
+#product-filters .container .product-filters-content .product-filters-part-one .product-filters-part-one-content .product-filters-part-one-list a {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(90, 90, 90);
+}
+#product-filters .container .product-filters-content .product-filters-part-one .product-filters-part-one-content .product-filters-part-one-list:nth-child(3) a {
+  font-weight: 600;
+  color: rgb(33, 33, 33) !important;
+}
+#product-filters .container .product-filters-content .product-filters-two-content {
+  display: flex;
+  flex-direction: column;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(90, 90, 90, 0.2);
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-category {
+  border-bottom: 1px solid rgba(90, 90, 90, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-brands {
+  border-bottom: 1px solid rgba(90, 90, 90, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-price {
+  border-bottom: 1px solid rgba(90, 90, 90, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors {
+  border-bottom: 1px solid rgba(90, 90, 90, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label {
+  gap: 14px;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-black-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}/*# sourceMappingURL=search.css.map */
