@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Satisfy&family=Tilt+Warp&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#explore-sign-in {
+  position: relative;
+  top: 161px;
+  width: 100%;
+  height: 404px;
+  background-image: url("../../checkout/img/page-header (1).jpg");
+  background-size: cover;
+}
+#explore-sign-in .explore-sign-in-bg {
+  position: absolute;
+  width: 100%;
+  height: 404px;
+  background-color: black;
+  opacity: 0.5;
+}
+#explore-sign-in .explore-sign-in-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#explore-sign-in .explore-sign-in-content span {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+#explore-sign-in .explore-sign-in-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+#sign-in {
+  position: relative;
+  top: 161px;
+  padding: 80px 0;
+  display: grid;
+  place-content: center;
+}
+#sign-in .container .sign-in-content {
+  width: 450px;
+  padding: 20px 32px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 8px;
+}
+#sign-in .container .sign-in-content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 24px;
+}
+#sign-in .container .sign-in-content__text a {
+  text-decoration: none;
+}
+#sign-in .container .sign-in-content__text p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(90, 90, 90);
+}
+#sign-in .container .sign-in-content__email {
+  display: flex;
+  flex-direction: column;
+}
+#sign-in .container .sign-in-content__email label {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: rgb(58, 58, 58);
+  cursor: pointer;
+}
+#sign-in .container .sign-in-content__email input {
+  height: 48px;
+  padding: 8px 20px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+#sign-in .container .sign-in-content__email input:focus-within {
+  border: 1px solid rgb(90, 90, 90);
+}
+#sign-in .container .sign-in-content__password {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#sign-in .container .sign-in-content__password label {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: rgb(58, 58, 58);
+  cursor: pointer;
+}
+#sign-in .container .sign-in-content__password input {
+  height: 48px;
+  padding: 8px 20px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+#sign-in .container .sign-in-content__password input:focus-within {
+  border: 1px solid rgb(90, 90, 90);
+}
+#sign-in .container .sign-in-content__password i {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  font-size: 18px;
+  opacity: 0.45;
+  cursor: pointer;
+  display: none;
+}
+#sign-in .container .sign-in-content__password .input--active {
+  display: block;
+}
+#sign-in .container .sign-in-content--remember-me {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch {
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+  cursor: pointer;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch #remember-switch {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+  position: absolute;
+  top: 2.5px;
+  left: 60px;
+  width: 100px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -35px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  text-shadow: 1px 1px #fff;
+  transition: color 0.3s ease-in-out;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox] {
+  display: none;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch .toggle-switch-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12.5%;
+  height: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch .toggle-switch-background .toggle-switch-handle {
+  position: absolute;
+  top: 3.5px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-handle {
+  transform: translateX(45px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #05c46b;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-background {
+  background-color: #000;
+  box-shadow: inset 0 0 0 2px #000;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch:before {
+  content: "On";
+  color: #05c46b;
+  right: -15px;
+}
+#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-background .toggle-switch-handle {
+  transform: translateX(21px);
+}
+#sign-in .container .sign-in-content--remember-me .forgot-password {
+  position: absolute;
+  right: 0;
+}/*# sourceMappingURL=sign-in.css.map */

@@ -44,11 +44,10 @@
   margin: 0;
 }
 #product-filters .container .product-filters-content label input {
-  width: 18px;
-  height: 18px;
-  border: 1px solid rgb(243, 238, 238) !important;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(231, 227, 227) !important;
   outline: none;
-  background-color: #000;
   border-radius: 6px;
 }
 #product-filters .container .product-filters-content label span {
@@ -130,4 +129,40 @@
   height: 20px;
   border-radius: 50%;
   background-color: #000;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-blue-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-olive-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: olive;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-maroon-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: maroon;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-brown-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: brown;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-white-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+#product-filters .container .product-filters-content .product-filters-two-content .product-filters-colors label .product-filters-colors-gray-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
 }/*# sourceMappingURL=search.css.map */

@@ -50,11 +50,11 @@
                 }
     
                 input {
-                    width: 18px;
-                    height: 18px;
-                    border: 1px solid rgb(243, 238, 238) !important;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid rgb(231, 227, 227) !important;
                     outline: none;
-                    background-color: #000;
+                    // background-color: #000;
                     border-radius: 6px;
                 }
     
@@ -153,6 +153,42 @@
                             height: 20px;
                             border-radius: 50%;
                             background-color: #000;
+                        }
+                        .product-filters-colors-blue-box{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: blue;
+                        }
+                        .product-filters-colors-olive-box{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: olive;
+                        }
+                        .product-filters-colors-maroon-box{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: maroon;
+                        }
+                        .product-filters-colors-brown-box{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: brown;
+                        }
+                        .product-filters-colors-white-box{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: white;
+                        }
+                        .product-filters-colors-gray-box{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: gray;
                         }
                     }
                 }
