@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/navbar-dropdown.css">
-    <link rel="stylesheet" href="assets/my-account/css/my-account.css">
+    <link rel="stylesheet" href="assets/contact-us/css/contact-us.css">
 </head>
 
 <body>
@@ -1038,301 +1038,81 @@
         <div class="header-line"></div>
     </header>
 
-    <section id="explore-my-account">
-        <div class="explore-my-account-bg"></div>
-        <div class="explore-my-account-content">
+    <section id="explore-contact-us">
+        <div class="explore-contact-us-bg"></div>
+        <div class="explore-contact-us-content">
             <span>explore</span>
-            <h2>My Account</h2>
+            <h2>Contact Us</h2>
         </div>
     </section>
 
-    <section id="dashboard-my-account">
+    <section id="contact-us">
         <div class="container">
-            <div class="dashboard">
-                <nav>
-                    <ul type="none" class="dashboard__tab-ul" role="tablist" aria-orientation="horizontal">
-                        <li class="dashboard__tab-li dashboard__tab-li--active">
-                            <img class="dashboard__icon" src="assets/my-account/img/home.png" alt="">
-                            <span>Dashboard</span>
-                        </li>
-                        <li class="dashboard__tab-li">
-                            <img class="dashboard__icon" src="assets/my-account/img/shopping-cart.png" alt="">
-                            <span>Orders</span>
-                        </li>
-                        <li class="dashboard__tab-li">
-                            <img class="dashboard__icon" src="assets/my-account/img/user (1).png" alt="">
-                            <span>Account Details</span>
-                        </li>
-                        <li class="dashboard__tab-li">
-                            <img class="dashboard__icon" src="assets/my-account/img/settings.png" alt="">
-                            <span>Change Password</span>
-                        </li>
-                        <a href="index.html" class="dashboard--logout">
-                            <img class="dashboard__icon" src="assets/my-account/img/exit.png" alt="">
-                            Logout
-                        </a>
-                    </ul>
-                </nav>
-                <div class="dashboard__content dashboard__content--active">
-                    <div class="dashboard-content">
-                        <h2>Dashboard</h2>
-                        <p>from your account dashboard you can view your <a href="#">recent orders</a>, manage your <a
-                                href="#">account details</a>
-                            and <a href="#">change your password</a></p>
-                    </div>
-                </div>
-                <div class="dashboard__content">
-                    <div class="order-content">
-                        <h2>Orders</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Order</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                    <th>Total</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="#">#3203</a></td>
-                                    <td>March 18, 2021</td>
-                                    <td>Completed</td>
-                                    <td>$16,950.00 for 93 items</td>
-                                    <td id="my-account-view"><a href="#">view</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">#3204</a></td>
-                                    <td>March 18, 2021</td>
-                                    <td>Completed</td>
-                                    <td>$16,950.00 for 93 items</td>
-                                    <td id="my-account-view"><a href="#">view</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="dashboard__content">
-                    <div class="account-details">
-                        <h2>Account Details</h2>
-                        <div class="shipping-address">
-                            <form action="#">
-                                <div class="shipping-address-part-one">
-                                    <div tabindex="shipping-address-part-one"
-                                        class="shipping-address-part-one-first-name">
-                                        <label for="first-name">
-                                            <span>First Name *</span>
-                                        </label>
-                                        <input type="text" name="" id="first-name">
-                                    </div>
-                                    <div class="shipping-adress-part-one-last-name">
-                                        <label for="last-name">
-                                            <span>Last Name *</span>
-                                        </label>
-                                        <input type="text" name="" id="last-name">
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-two">
-                                    <div class="shipping-address-part-two-address">
-                                        <label for="address">
-                                            <span>Address *</span>
-                                        </label>
-                                        <input type="text" name="" id="address">
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-three">
-                                    <div class="shipping-address-part-three-phone-mobile">
-                                        <label for="phone-mobile">
-                                            <span>Phone/Mobile *</span>
-                                        </label>
-                                        <input type="tel" name="" id="phone-mobile">
-                                    </div>
-                                    <div class="shipping-address-part-three-email">
-                                        <label for="email">
-                                            <span>Email *</span></label>
-                                        <input type="email" name="" id="email">
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-four">
-                                    <p>Gender</p>
-                                    <div class="shipping-address-part-four">
-                                        <input type="radio" name="gender-radio" id="male">
-                                        <label id="male" for="">Male</label>
-                                        <input type="radio" name="gender-radio" id="female">
-                                        <label id="female" for="">Female</label>
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-five">
-                                    <button>Save</button>
-                                </div>
-                            </form>
+            <div class="contact-us-content">
+                <div class="find-us-here">
+                    <h4>Find us here</h4>
+                    <div class="find-us-here__address">
+                        <div class="find-us-here__icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="find-us-here__text">
+                            <h5>Address</h5>
+                            <a href="#">PO Box 14122 Collins Street West.Victoria</a>
                         </div>
                     </div>
-                </div>
-                <div class="dashboard__content">
-                    <div class="change-password">
-                        <h2>Change Password</h2>
-                        <div class="change-password__old-password">
-                            <form action="#">
-                                <label for="old-password">Old Password</label>
-                                <div class="change-password__input">
-                                    <input id="old-password" type="password">
-                                    <i class="fa-regular fa-eye old-open-eye old-eye "></i>
-                                    <i class="fa-regular fa-eye-slash old-close-eye old-eye input--active"></i>
-                                </div>
-                            </form>
+                    <div class="find-us-here__email">
+                        <div class="find-us-here__icon">
+                            <i class="fa-solid fa-envelope"></i>
                         </div>
-                        <div class="change-password__new-password">
-                            <form action="#">
-                                <label for="">New Password</label>
-                                <div class="change-password__input">
-                                    <input id="new-password" type="password">
-                                    <i class="fa-regular fa-eye new-open-eye new-eye"></i>
-                                    <i class="fa-regular fa-eye-slash new-close-eye new-eye input--active"></i>
-                                </div>
-                            </form>
+                        <div class="find-us-here__text">
+                            <h5>Email</h5>
+                            <a href="#">example@example.com</a>
                         </div>
-                        <button class="change-password--change-passvord">
-                            Change Password
-                        </button>
                     </div>
+                    <div class="find-us-here__phone">
+                        <div class="find-us-here__icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="find-us-here__text">
+                            <h5>Phone</h5>
+                            <a href="#">+1 1234 5678 90, +1 0987 6543 21</a>
+                        </div>
+                    </div>
+                    <div class="find-us-here__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12157.71469426235!2d49.8539455!3d40.3771909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sen!2saz!4v1682782526568!5m2!1sen!2saz"
+                            width="360" height="185" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="get-in-touch">
+                    <h4>Get in Touch</h4>
+                    <form action="#">
+                        <div class="get-in-touch__form">
+                            <div class="get-in-touch__your-name-email">
+                                <div class="get-in-touch__your-name">
+                                    <label for="name">Your Name (required)</label>
+                                    <input placeholder="Enter Your Name" id="name" type="text" autocomplete="off">
+                                </div>
+                                <div class="get-in-touch__your-email">
+                                    <label for="email">Your Email (required)</label>
+                                    <input placeholder="Enter Your Email" id="email" type="text" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="get-in-touch__subject">
+                                <label for="subject">Subject</label>
+                                <input placeholder="Enter Your Subject" id="subject" type="text">
+                            </div>
+                            <div class="get-in-touch__message">
+                                <label for="message">Message</label>
+                                <textarea placeholder="Write your message here" id="message" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="your-inbox">
-        <div class="container">
-            <div class="your-inbox-container">
-                <div class="your-inbox__container__text">
-                    <h3>Get Expert Tips In Your Inbox</h3>
-                    <p>Subscribe to our newsletter and stay updated</p>
-                </div>
-                <form action="#">
-                    <input type="text" placeholder="Write your email here">
-                    <button><span>Subscribe</span></button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content-one">
-                <div class="footer-chawk-bazar">
-                    <a href="#"><img src="assets/img/logo.svg" alt="footer-logo"></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua</p>
-                    <ul type="none" class="footer-chawk-bazar-social-media">
-                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-instagram"></i></li>
-                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-twitter"></i></li>
-                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-facebook"></i></li>
-                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-youtube"></i></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Social</h4>
-                    <ul type="none" class="footer-social-media">
-                        <li class="footer-social-media-link">
-                            <i class="fa-brands fa-instagram"></i>
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li class="footer-social-media-link">
-                            <i class="fa-brands fa-twitter"></i>
-                            <a href="#">Twitter</a>
-                        </li>
-                        <li class="footer-social-media-link">
-                            <i class="fa-brands fa-facebook"></i>
-                            <a href="#">Facebook</a>
-                        </li>
-                        <li class="footer-social-media-link">
-                            <i class="fa-brands fa-youtube"></i>
-                            <a href="#">Youtube</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <ul type="none" class="footer-contact-content">
-                        <li class="footer-contact-list">
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li class="footer-contact-list">
-                            <a href="#">yourexample@gmail.com</a>
-                        </li>
-                        <li class="footer-contact-list">
-                            <a href="#">example@gmail.com</a>
-                        </li>
-                        <li class="footer-contact-list">
-                            <a href="#">Call us: +1 254 568-5479</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-about">
-                    <h4>About</h4>
-                    <ul type="none" class="footer-about-content">
-                        <li class="footer-about-list">
-                            <a href="#">Support Center</a>
-                        </li>
-                        <li class="footer-about-list">
-                            <a href="#">Customer Support</a>
-                        </li>
-                        <li class="footer-about-list">
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="footer-about-list">
-                            <a href="#">Copyright</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-customer-care">
-                    <h4>Customer Care</h4>
-                    <ul type="none" class="footer-customer-care-content">
-                        <li class="footer-customer-care-list">
-                            <a href="#">FAQ & Helps</a>
-                        </li>
-                        <li class="footer-customer-care-list">
-                            <a href="#">Shipping & Delivery</a>
-                        </li>
-                        <li class="footer-customer-care-list">
-                            <a href="#">Return & Exchanges</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-our-information">
-                    <h4>Our Information</h4>
-                    <ul type="none" class="footer-our-information-content">
-                        <li class="footer-our-information-list">
-                            <a href="#">Privacy policy update</a>
-                        </li>
-                        <li class="footer-our-information-list">
-                            <a href="#">Terms & conditions</a>
-                        </li>
-                        <li class="footer-our-information-list">
-                            <a href="#">Return Policy</a>
-                        </li>
-                        <li class="footer-our-information-list">
-                            <a href="#">Site Map</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="line-footer"></div>
-            <div class="footer-content-two">
-                <p>Copyright &copy; 2023 <span><a href="https://redq.io/">REDQ</a></span> All rights reserved</p>
-                <ul type="none" class="footer-content-two-card">
-                    <li><a href="#"><img src="assets/img/mastercard.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/img/visa.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/img/paypal.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/img/jcb.svg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/img/skrill.svg" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/my-account.js"></script>
 </body>
 
 </html>

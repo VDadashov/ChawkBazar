@@ -1,7 +1,20 @@
+function loginOpenModal() {
+    document.querySelector("#register-modal").style.display = "block";
+    document.querySelector("#forgot-modal").style.display = "none";
+    document.querySelector("#login-modal").style.display = "none";
+  }
+  
+  function loginCloseModal() {
+    document.querySelector("#register-modal").style.display = "none";
+  }
+  document.querySelector(".sign-up-content--login-modal-btn").addEventListener("click", loginOpenModal);
+
+
+
 //#region password-input
 
-const password = document.querySelector('#sign-in-password-input');
-const modalPassword = document.querySelector('#sign-in-modal-password-input');
+const password = document.querySelector('#sign-up-password-input');
+const modalPassword = document.querySelector('#sign-up-modal-password-input');
 const passwordOpenEye = document.querySelector('.password-open-eye');
 const passwordCloseEye = document.querySelector('.password-close-eye');
 const passwordModalOpenEye = document.querySelector('.password-modal-open-eye');
@@ -41,35 +54,5 @@ modalNewTogglePassword.forEach(item => {
 
 //#endregion
 
-function openModal() {
-  document.querySelector("#login-modal").style.display = "block";
-}
-function closeModal() {
-  document.querySelector("#login-modal").style.display = "none";
-}
-document.querySelector(".sign-in-content--register-btn").addEventListener("click", openModal);
-
-
-function loginOpenModal() {
-  document.querySelector("#register-modal").style.display = "block";
-  document.querySelector("#forgot-modal").style.display = "none";
-  document.querySelector("#login-modal").style.display = "none";
-}
-
-function loginCloseModal() {
-  document.querySelector("#register-modal").style.display = "none";
-}
-document.querySelector(".sign-in-content--login-modal-btn").addEventListener("click", loginOpenModal);
-
-
-
-
-function forgotOpenModal() {
-  document.querySelector("#forgot-modal").style.display = "block";
-}
-function forgotCloseModal() {
-  document.querySelector("#forgot-modal").style.display = "none";
-}
-document.querySelector(".forgot-password__btn").addEventListener("click", forgotOpenModal);
-document.querySelector(".sign-in-content--forgot-login-modal-btn").addEventListener("click",loginOpenModal)
-
+  
+  

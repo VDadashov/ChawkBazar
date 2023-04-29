@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-#explore-sign-in {
+#explore-sign-up {
     position: relative;
     top: 161px;
     width: 100%;
@@ -14,7 +14,7 @@
     background-image: url('../../checkout/img/page-header\ \(1\).jpg');
     background-size: cover;
 
-    .explore-sign-in-bg {
+    .explore-sign-up-bg {
         position: absolute;
         width: 100%;
         height: 404px;
@@ -22,7 +22,7 @@
         opacity: 0.5;
     }
 
-    .explore-sign-in-content {
+    .explore-sign-up-content {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -49,7 +49,7 @@
     }
 }
 
-#sign-in {
+#sign-up {
     position: relative;
     top: 161px;
     padding: 80px 0;
@@ -57,7 +57,7 @@
     place-content: center;
 
     .container {
-        .sign-in-content {
+        .sign-up-content {
             width: 450px;
             padding: 20px 32px;
             border: 1px solid rgb(220, 220, 220);
@@ -303,11 +303,36 @@
                 margin-top: 16px;
             }
 
+            &__register {
+                margin-top: 16px;
+            }
+
             &__forget-login{
                 height: auto !important;
             }
 
             &--login-btn {
+                width: 100%;
+                height: 48px;
+                margin-top: 6px;
+                padding: 16px 32px;
+                background-color: rgb(33, 33, 33);
+                color: #fff;
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+
+                &:hover {
+                    background-color: rgb(56, 56, 56);
+                    cursor: pointer;
+                }
+            }
+
+            &--register-btn {
                 width: 100%;
                 height: 48px;
                 margin-top: 6px;
@@ -459,7 +484,7 @@
                 }
             }
 
-            &--register-btn {
+            &--register-modal-btn {
                 width: 65.563px;
                 height: 24px;
                 margin-left: 6px;
@@ -530,47 +555,6 @@
             }
 
         }
-
-        .login-modal {
-            display: none;
-            position: fixed;
-            z-index: 100;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.62);
-
-            &__content {
-                height: 553.6px;
-                background-color: #fefefe;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border: 1px solid #888;
-                border-radius: 10px;
-                overflow-y: scroll;
-            }
-
-            .close {
-                color: #aaa;
-                position: fixed;
-                z-index: 999;
-                top: 0;
-                right: 8px;
-                font-size: 36px;
-                font-weight: bold;
-              }
-              
-              .close:hover,
-              .close:focus {
-                color: black;
-                text-decoration: none;
-                cursor: pointer;
-              }
-        }
-
         .register-modal {
             display: none;
             position: fixed;
@@ -583,43 +567,6 @@
 
             &__content {
                 height: 553.6px;
-                background-color: #fefefe;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border: 1px solid #888;
-                border-radius: 10px;
-            }
-
-            .close {
-                color: #aaa;
-                position: fixed;
-                z-index: 999;
-                top: 0;
-                right: 8px;
-                font-size: 36px;
-                font-weight: bold;
-              }
-              
-              .close:hover,
-              .close:focus {
-                color: black;
-                text-decoration: none;
-                cursor: pointer;
-              }
-        }
-        .forgot-modal {
-            display: none;
-            position: fixed;
-            z-index: 101;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.62);
-
-            &__content {
                 background-color: #fefefe;
                 position: absolute;
                 top: 50%;

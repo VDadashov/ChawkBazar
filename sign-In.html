@@ -1075,10 +1075,287 @@
                             <button class="forgot-password__btn">Forgot password?</button>
                         </div>                      
                     </div>
+                    <div class="sign-in-content__login">
+                        <button class="sign-in-content--login-btn">Login</button>
+                    </div>
+                </form>
+                <div class="sign-in-content__or">
+                    <div class="sign-in-content--or-line"></div>
+                    <span>Or</span>
+                    <div class="sign-in-content--or-line"></div>
+                </div>
+                <button class="sign-in-content--facebook-btn">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Login With Facebook</span>
+                </button>
+                <button class="sign-in-content--google-btn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Login With Google</span>
+                </button>
+                <div class="sign-in-content__register">
+                    <span>Don't have any account?</span>
+                    <button class="sign-in-content--register-btn">Register</button>
+                </div>
+            </div>
+            <div id="login-modal" class="login-modal">
+                <div class="login-modal__content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="sign-in-content">
+                        <div class="sign-in-content__text">
+                            <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                            <p>By signing up, you agree to our terms & policy</p>
+                        </div>
+                        <form action="#">
+                            <div class="sign-in-content__name">
+                                <label for="sign-in-modal-name-input">Name</label>
+                                <input id="sign-in-modal-name-input" type="text">
+                            </div>
+                            <div class="sign-in-content__email">
+                                <label for="sign-in-modal-email-input">Email</label>
+                                <input id="sign-in-modal-email-input" type="text">
+                            </div>
+                            <div class="sign-in-content__password">
+                                <label for="sign-in-modal-password-input">Password</label>
+                                <input id="sign-in-modal-password-input" type="password">
+                                <i class="fa-regular modal-custom password-modal-open-eye fa-eye"></i>
+                                <i class="fa-regular modal-custom password-modal-close-eye fa-eye-slash input--modal-active"></i>
+                            </div>
+                            <div class="sign-in-content__login">
+                                <button class="sign-in-content--login-btn">Register</button>
+                            </div>
+                        </form>
+                        <div class="sign-in-content__or">
+                            <div class="sign-in-content--or-line"></div>
+                            <span>Or</span>
+                            <div class="sign-in-content--or-line"></div>
+                        </div>
+                        <button class="sign-in-content--facebook-btn">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Login With Facebook</span>
+                        </button>
+                        <button class="sign-in-content--google-btn">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Login With Google</span>
+                        </button>
+                        <div class="sign-in-content__register">
+                            <span>Don't have any account?</span>
+                            <button class="sign-in-content--login-modal-btn">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="register-modal" class="register-modal">
+                <div class="register-modal__content">
+                    <span class="close" onclick="loginCloseModal()">&times;</span>
+                    <div class="sign-in-content">
+                        <div class="sign-in-content__text">
+                            <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                            <p>Login with your email & password</p>
+                        </div>
+                        <form action="#">
+                            <div class="sign-in-content__email">
+                                <label for="sign-in-rmodal-email-input">Email</label>
+                                <input id="sign-in-rmodal-email-input" type="text">
+                            </div>
+                            <div class="sign-in-content__password">
+                                <label for="sign-in-rmodal-password-input">Password</label>
+                                <input id="sign-in-rmodal-password-input" type="password">
+                                <i class="fa-regular modal-custom password-modal-open-eye fa-eye"></i>
+                                <i class="fa-regular modal-custom password-modal-close-eye fa-eye-slash input--modal-active"></i>
+                            </div>
+                            <div class="sign-in-content--remember-me">
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <div class="toggle-switch-background">
+                                      <div class="toggle-switch-handle"></div>
+                                    </div>
+                                    <span id="remember-switch">Remember me</span> 
+                                  </label>
+                                  <div class="forgot-password">
+                                    <button class="forgot-password__btn">Forgot password?</button>
+                                </div>                      
+                            </div>
+                            <div class="sign-in-content__login">
+                                <button class="sign-in-content--login-btn">Register</button>
+                            </div>
+                        </form>
+                        <div class="sign-in-content__or">
+                            <div class="sign-in-content--or-line"></div>
+                            <span>Or</span>
+                            <div class="sign-in-content--or-line"></div>
+                        </div>
+                        <button class="sign-in-content--facebook-btn">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Login With Facebook</span>
+                        </button>
+                        <button class="sign-in-content--google-btn">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Login With Google</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="forgot-modal" class="forgot-modal">
+                <div class="forgot-modal__content">
+                    <span class="close" onclick="forgotCloseModal()">&times;</span>
+                    <div class="sign-in-content">
+                        <div class="sign-in-content__text">
+                            <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                            <p>We'll send you a link to reset your password</p>
+                        </div>
+                        <form action="#">
+                            <div class="sign-in-content__email">
+                                <label for="sign-in-fmodal-email-input">Email</label>
+                                <input id="sign-in-fmodal-email-input" type="text">
+                            </div>
+                            <div class="sign-in-content__login sign-in-content__forget-login">
+                                <button class="sign-in-content--login-btn">Login</button>
+                            </div>
+                        </form>
+                        <div class="sign-in-content__or">
+                            <div class="sign-in-content--or-line"></div>
+                            <span>Or</span>
+                            <div class="sign-in-content--or-line"></div>
+                        </div>
+                        <div class="sign-in-content__login">
+                            <span>Back To</span>
+                            <button class="sign-in-content--forgot-login-modal-btn">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="your-inbox">
+        <div class="container">
+            <div class="your-inbox-container">
+                <div class="your-inbox__container__text">
+                    <h3>Get Expert Tips In Your Inbox</h3>
+                    <p>Subscribe to our newsletter and stay updated</p>
+                </div>
+                <form action="#">
+                    <input type="text" placeholder="Write your email here">
+                    <button><span>Subscribe</span></button>
                 </form>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content-one">
+                <div class="footer-chawk-bazar">
+                    <a href="#"><img src="assets/img/logo.svg" alt="footer-logo"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua</p>
+                    <ul type="none" class="footer-chawk-bazar-social-media">
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-instagram"></i></li>
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social</h4>
+                    <ul type="none" class="footer-social-media">
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-facebook"></i>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-youtube"></i>
+                            <a href="#">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul type="none" class="footer-contact-content">
+                        <li class="footer-contact-list">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="footer-contact-list">
+                            <a href="#">yourexample@gmail.com</a>
+                        </li>
+                        <li class="footer-contact-list">
+                            <a href="#">example@gmail.com</a>
+                        </li>
+                        <li class="footer-contact-list">
+                            <a href="#">Call us: +1 254 568-5479</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-about">
+                    <h4>About</h4>
+                    <ul type="none" class="footer-about-content">
+                        <li class="footer-about-list">
+                            <a href="#">Support Center</a>
+                        </li>
+                        <li class="footer-about-list">
+                            <a href="#">Customer Support</a>
+                        </li>
+                        <li class="footer-about-list">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="footer-about-list">
+                            <a href="#">Copyright</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-customer-care">
+                    <h4>Customer Care</h4>
+                    <ul type="none" class="footer-customer-care-content">
+                        <li class="footer-customer-care-list">
+                            <a href="#">FAQ & Helps</a>
+                        </li>
+                        <li class="footer-customer-care-list">
+                            <a href="#">Shipping & Delivery</a>
+                        </li>
+                        <li class="footer-customer-care-list">
+                            <a href="#">Return & Exchanges</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-our-information">
+                    <h4>Our Information</h4>
+                    <ul type="none" class="footer-our-information-content">
+                        <li class="footer-our-information-list">
+                            <a href="#">Privacy policy update</a>
+                        </li>
+                        <li class="footer-our-information-list">
+                            <a href="#">Terms & conditions</a>
+                        </li>
+                        <li class="footer-our-information-list">
+                            <a href="#">Return Policy</a>
+                        </li>
+                        <li class="footer-our-information-list">
+                            <a href="#">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line-footer"></div>
+            <div class="footer-content-two">
+                <p>Copyright &copy; 2023 <span><a href="https://redq.io/">REDQ</a></span> All rights reserved</p>
+                <ul type="none" class="footer-content-two-card">
+                    <li><a href="#"><img src="assets/img/mastercard.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/visa.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/paypal.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/jcb.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/skrill.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
     <script src="assets/js/sign-in.js"></script>
 </body>

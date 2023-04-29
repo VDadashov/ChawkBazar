@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -12,9 +11,8 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/navbar-dropdown.css">
-    <link rel="stylesheet" href="assets/my-account/css/my-account.css">
+    <link rel="stylesheet" href="assets/sign-up/css/sign-up.css">
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -1038,163 +1036,105 @@
         <div class="header-line"></div>
     </header>
 
-    <section id="explore-my-account">
-        <div class="explore-my-account-bg"></div>
-        <div class="explore-my-account-content">
+    <section id="explore-sign-up">
+        <div class="explore-sign-up-bg"></div>
+        <div class="explore-sign-up-content">
             <span>explore</span>
-            <h2>My Account</h2>
+            <h2>Register</h2>
         </div>
     </section>
 
-    <section id="dashboard-my-account">
+    <section id="sign-up">
         <div class="container">
-            <div class="dashboard">
-                <nav>
-                    <ul type="none" class="dashboard__tab-ul" role="tablist" aria-orientation="horizontal">
-                        <li class="dashboard__tab-li dashboard__tab-li--active">
-                            <img class="dashboard__icon" src="assets/my-account/img/home.png" alt="">
-                            <span>Dashboard</span>
-                        </li>
-                        <li class="dashboard__tab-li">
-                            <img class="dashboard__icon" src="assets/my-account/img/shopping-cart.png" alt="">
-                            <span>Orders</span>
-                        </li>
-                        <li class="dashboard__tab-li">
-                            <img class="dashboard__icon" src="assets/my-account/img/user (1).png" alt="">
-                            <span>Account Details</span>
-                        </li>
-                        <li class="dashboard__tab-li">
-                            <img class="dashboard__icon" src="assets/my-account/img/settings.png" alt="">
-                            <span>Change Password</span>
-                        </li>
-                        <a href="index.html" class="dashboard--logout">
-                            <img class="dashboard__icon" src="assets/my-account/img/exit.png" alt="">
-                            Logout
-                        </a>
-                    </ul>
-                </nav>
-                <div class="dashboard__content dashboard__content--active">
-                    <div class="dashboard-content">
-                        <h2>Dashboard</h2>
-                        <p>from your account dashboard you can view your <a href="#">recent orders</a>, manage your <a
-                                href="#">account details</a>
-                            and <a href="#">change your password</a></p>
-                    </div>
+            <div class="sign-up-content">
+                <div class="sign-up-content__text">
+                    <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                    <p>By signing up, you agree to our terms & policy</p>
                 </div>
-                <div class="dashboard__content">
-                    <div class="order-content">
-                        <h2>Orders</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Order</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                    <th>Total</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="#">#3203</a></td>
-                                    <td>March 18, 2021</td>
-                                    <td>Completed</td>
-                                    <td>$16,950.00 for 93 items</td>
-                                    <td id="my-account-view"><a href="#">view</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">#3204</a></td>
-                                    <td>March 18, 2021</td>
-                                    <td>Completed</td>
-                                    <td>$16,950.00 for 93 items</td>
-                                    <td id="my-account-view"><a href="#">view</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <form action="#">
+                    <div class="sign-up-content__name">
+                        <label for="sign-in-modal-name-input">Name</label>
+                        <input id="sign-in-modal-name-input" type="text">
                     </div>
-                </div>
-                <div class="dashboard__content">
-                    <div class="account-details">
-                        <h2>Account Details</h2>
-                        <div class="shipping-address">
-                            <form action="#">
-                                <div class="shipping-address-part-one">
-                                    <div tabindex="shipping-address-part-one"
-                                        class="shipping-address-part-one-first-name">
-                                        <label for="first-name">
-                                            <span>First Name *</span>
-                                        </label>
-                                        <input type="text" name="" id="first-name">
-                                    </div>
-                                    <div class="shipping-adress-part-one-last-name">
-                                        <label for="last-name">
-                                            <span>Last Name *</span>
-                                        </label>
-                                        <input type="text" name="" id="last-name">
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-two">
-                                    <div class="shipping-address-part-two-address">
-                                        <label for="address">
-                                            <span>Address *</span>
-                                        </label>
-                                        <input type="text" name="" id="address">
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-three">
-                                    <div class="shipping-address-part-three-phone-mobile">
-                                        <label for="phone-mobile">
-                                            <span>Phone/Mobile *</span>
-                                        </label>
-                                        <input type="tel" name="" id="phone-mobile">
-                                    </div>
-                                    <div class="shipping-address-part-three-email">
-                                        <label for="email">
-                                            <span>Email *</span></label>
-                                        <input type="email" name="" id="email">
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-four">
-                                    <p>Gender</p>
-                                    <div class="shipping-address-part-four">
-                                        <input type="radio" name="gender-radio" id="male">
-                                        <label id="male" for="">Male</label>
-                                        <input type="radio" name="gender-radio" id="female">
-                                        <label id="female" for="">Female</label>
-                                    </div>
-                                </div>
-                                <div class="shipping-address-part-five">
-                                    <button>Save</button>
-                                </div>
-                            </form>
-                        </div>
+                    <div class="sign-up-content__email">
+                        <label for="sign-up-email-input">Email</label>
+                        <input id="sign-up-email-input" type="text">
                     </div>
+                    <div class="sign-up-content__password">
+                        <label for="sign-up-password-input">Password</label>
+                        <input id="sign-up-password-input" type="password">
+                        <i class="fa-regular password-open-eye fa-eye"></i>
+                        <i class="fa-regular password-close-eye fa-eye-slash input--active"></i>
+                    </div>
+                    <div class="sign-up-content__register">
+                        <button class="sign-up-content--register-btn">Register</button>
+                    </div>
+                </form>
+                <div class="sign-up-content__or">
+                    <div class="sign-up-content--or-line"></div>
+                    <span>Or</span>
+                    <div class="sign-up-content--or-line"></div>
                 </div>
-                <div class="dashboard__content">
-                    <div class="change-password">
-                        <h2>Change Password</h2>
-                        <div class="change-password__old-password">
-                            <form action="#">
-                                <label for="old-password">Old Password</label>
-                                <div class="change-password__input">
-                                    <input id="old-password" type="password">
-                                    <i class="fa-regular fa-eye old-open-eye old-eye "></i>
-                                    <i class="fa-regular fa-eye-slash old-close-eye old-eye input--active"></i>
-                                </div>
-                            </form>
+                <button class="sign-up-content--facebook-btn">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Login With Facebook</span>
+                </button>
+                <button class="sign-up-content--google-btn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Login With Google</span>
+                </button>
+                <div class="sign-up-content__register">
+                    <span>Don't have any account?</span>
+                    <button class="sign-up-content--login-modal-btn">Login</button>
+                </div>
+            </div>
+            <div id="register-modal" class="register-modal">
+                <div class="register-modal__content">
+                    <span class="close" onclick="loginCloseModal()">&times;</span>
+                    <div class="sign-up-content">
+                        <div class="sign-up-content__text">
+                            <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                            <p>Login with your email & password</p>
                         </div>
-                        <div class="change-password__new-password">
-                            <form action="#">
-                                <label for="">New Password</label>
-                                <div class="change-password__input">
-                                    <input id="new-password" type="password">
-                                    <i class="fa-regular fa-eye new-open-eye new-eye"></i>
-                                    <i class="fa-regular fa-eye-slash new-close-eye new-eye input--active"></i>
-                                </div>
-                            </form>
+                        <form action="#">
+                            <div class="sign-up-content__email">
+                                <label for="sign-up-rmodal-email-input">Email</label>
+                                <input id="sign-up-rmodal-email-input" type="text">
+                            </div>
+                            <div class="sign-up-content__password">
+                                <label for="sign-up-rmodal-password-input">Password</label>
+                                <input id="sign-up-rmodal-password-input" type="password">
+                                <i class="fa-regular modal-custom password-modal-open-eye fa-eye"></i>
+                                <i class="fa-regular modal-custom password-modal-close-eye fa-eye-slash input--modal-active"></i>
+                            </div>
+                            <div class="sign-up-content--remember-me">
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <div class="toggle-switch-background">
+                                      <div class="toggle-switch-handle"></div>
+                                    </div>
+                                    <span id="remember-switch">Remember me</span> 
+                                  </label>
+                                  <div class="forgot-password">
+                                    <button class="forgot-password__btn">Forgot password?</button>
+                                </div>                      
+                            </div>
+                            <div class="sign-up-content__login">
+                                <button class="sign-up-content--login-btn">Register</button>
+                            </div>
+                        </form>
+                        <div class="sign-up-content__or">
+                            <div class="sign-up-content--or-line"></div>
+                            <span>Or</span>
+                            <div class="sign-up-content--or-line"></div>
                         </div>
-                        <button class="change-password--change-passvord">
-                            Change Password
+                        <button class="sign-up-content--facebook-btn">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Login With Facebook</span>
+                        </button>
+                        <button class="sign-up-content--google-btn">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Login With Google</span>
                         </button>
                     </div>
                 </div>
@@ -1202,7 +1142,7 @@
         </div>
     </section>
 
-    <section id="your-inbox">
+    <!-- <section id="your-inbox">
         <div class="container">
             <div class="your-inbox-container">
                 <div class="your-inbox__container__text">
@@ -1330,9 +1270,8 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
-    <script src="assets/js/my-account.js"></script>
+    <script src="assets/js/sign-up.js"></script>
 </body>
-
 </html>

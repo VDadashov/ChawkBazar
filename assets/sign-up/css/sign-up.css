@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-#explore-sign-in {
+#explore-sign-up {
   position: relative;
   top: 161px;
   width: 100%;
@@ -13,14 +13,14 @@
   background-image: url("../../checkout/img/page-header (1).jpg");
   background-size: cover;
 }
-#explore-sign-in .explore-sign-in-bg {
+#explore-sign-up .explore-sign-up-bg {
   position: absolute;
   width: 100%;
   height: 404px;
   background-color: black;
   opacity: 0.5;
 }
-#explore-sign-in .explore-sign-in-content {
+#explore-sign-up .explore-sign-up-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,53 +30,53 @@
   flex-direction: column;
   align-items: center;
 }
-#explore-sign-in .explore-sign-in-content span {
+#explore-sign-up .explore-sign-up-content span {
   font-family: "Satisfy", cursive;
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
   margin-bottom: 12px;
 }
-#explore-sign-in .explore-sign-in-content h2 {
+#explore-sign-up .explore-sign-up-content h2 {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
 }
 
-#sign-in {
+#sign-up {
   position: relative;
   top: 161px;
   padding: 80px 0;
   display: grid;
   place-content: center;
 }
-#sign-in .container .sign-in-content {
+#sign-up .container .sign-up-content {
   width: 450px;
   padding: 20px 32px;
   border: 1px solid rgb(220, 220, 220);
   border-radius: 8px;
 }
-#sign-in .container .sign-in-content__text {
+#sign-up .container .sign-up-content__text {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
   margin-bottom: 24px;
 }
-#sign-in .container .sign-in-content__text a {
+#sign-up .container .sign-up-content__text a {
   text-decoration: none;
 }
-#sign-in .container .sign-in-content__text p {
+#sign-up .container .sign-up-content__text p {
   margin-top: 8px;
   font-size: 16px;
   line-height: 24px;
   color: rgb(90, 90, 90);
 }
-#sign-in .container .sign-in-content__name {
+#sign-up .container .sign-up-content__name {
   display: flex;
   flex-direction: column;
 }
-#sign-in .container .sign-in-content__name label {
+#sign-up .container .sign-up-content__name label {
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 600;
@@ -84,7 +84,7 @@
   color: rgb(58, 58, 58);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content__name input {
+#sign-up .container .sign-up-content__name input {
   height: 48px;
   padding: 8px 20px;
   border: 1px solid rgb(224, 224, 224);
@@ -92,15 +92,15 @@
   outline: none;
   font-size: 14px;
 }
-#sign-in .container .sign-in-content__name input:focus-within {
+#sign-up .container .sign-up-content__name input:focus-within {
   border: 1px solid rgb(90, 90, 90);
 }
-#sign-in .container .sign-in-content__email {
+#sign-up .container .sign-up-content__email {
   margin-top: 14px;
   display: flex;
   flex-direction: column;
 }
-#sign-in .container .sign-in-content__email label {
+#sign-up .container .sign-up-content__email label {
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 600;
@@ -108,7 +108,7 @@
   color: rgb(58, 58, 58);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content__email input {
+#sign-up .container .sign-up-content__email input {
   height: 48px;
   padding: 8px 20px;
   border: 1px solid rgb(224, 224, 224);
@@ -116,16 +116,16 @@
   outline: none;
   font-size: 14px;
 }
-#sign-in .container .sign-in-content__email input:focus-within {
+#sign-up .container .sign-up-content__email input:focus-within {
   border: 1px solid rgb(90, 90, 90);
 }
-#sign-in .container .sign-in-content__password {
+#sign-up .container .sign-up-content__password {
   margin-top: 14px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-#sign-in .container .sign-in-content__password label {
+#sign-up .container .sign-up-content__password label {
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 600;
@@ -133,7 +133,7 @@
   color: rgb(58, 58, 58);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content__password input {
+#sign-up .container .sign-up-content__password input {
   height: 48px;
   padding: 8px 20px;
   border: 1px solid rgb(224, 224, 224);
@@ -141,10 +141,10 @@
   outline: none;
   font-size: 14px;
 }
-#sign-in .container .sign-in-content__password input:focus-within {
+#sign-up .container .sign-up-content__password input:focus-within {
   border: 1px solid rgb(90, 90, 90);
 }
-#sign-in .container .sign-in-content__password i {
+#sign-up .container .sign-up-content__password i {
   position: absolute;
   top: 40px;
   right: 15px;
@@ -153,25 +153,25 @@
   cursor: pointer;
   display: none;
 }
-#sign-in .container .sign-in-content__password .input--active {
+#sign-up .container .sign-up-content__password .input--active {
   display: block;
 }
-#sign-in .container .sign-in-content__password .input--modal-active {
+#sign-up .container .sign-up-content__password .input--modal-active {
   display: block;
 }
-#sign-in .container .sign-in-content--remember-me {
+#sign-up .container .sign-up-content--remember-me {
   margin-top: 14px;
   display: flex;
   align-items: center;
   position: relative;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch {
+#sign-up .container .sign-up-content--remember-me .toggle-switch {
   display: inline-block;
   width: 48px;
   height: 25px;
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch #remember-switch {
+#sign-up .container .sign-up-content--remember-me .toggle-switch #remember-switch {
   font-size: 14px;
   line-height: 20px;
   color: rgb(33, 33, 33);
@@ -184,7 +184,7 @@
      -moz-user-select: none;
           user-select: none;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch::before {
+#sign-up .container .sign-up-content--remember-me .toggle-switch::before {
   content: "";
   position: absolute;
   top: -25px;
@@ -195,10 +195,10 @@
   text-shadow: 1px 1px #fff;
   transition: color 0.3s ease-in-out;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox] {
+#sign-up .container .sign-up-content--remember-me .toggle-switch input[type=checkbox] {
   display: none;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch .toggle-switch-background {
+#sign-up .container .sign-up-content--remember-me .toggle-switch .toggle-switch-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -209,7 +209,7 @@
   box-shadow: inset 0 0 0 2px #ccc;
   transition: background-color 0.3s ease-in-out;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch .toggle-switch-background .toggle-switch-handle {
+#sign-up .container .sign-up-content--remember-me .toggle-switch .toggle-switch-background .toggle-switch-handle {
   position: absolute;
   top: 3.5px;
   left: 5px;
@@ -220,27 +220,27 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-handle {
+#sign-up .container .sign-up-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-handle {
   transform: translateX(45px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #05c46b;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-background {
+#sign-up .container .sign-up-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-background {
   background-color: #000;
   box-shadow: inset 0 0 0 2px #000;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch:before {
+#sign-up .container .sign-up-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch:before {
   content: "On";
   color: #05c46b;
   right: -15px;
 }
-#sign-in .container .sign-in-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-background .toggle-switch-handle {
+#sign-up .container .sign-up-content--remember-me .toggle-switch input[type=checkbox]:checked + .toggle-switch-background .toggle-switch-handle {
   transform: translateX(21px);
 }
-#sign-in .container .sign-in-content--remember-me .forgot-password {
+#sign-up .container .sign-up-content--remember-me .forgot-password {
   position: absolute;
   right: 0;
 }
-#sign-in .container .sign-in-content--remember-me .forgot-password__btn {
+#sign-up .container .sign-up-content--remember-me .forgot-password__btn {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -250,16 +250,19 @@
   cursor: pointer;
   color: rgb(33, 33, 33);
 }
-#sign-in .container .sign-in-content--remember-me .forgot-password__btn:hover {
+#sign-up .container .sign-up-content--remember-me .forgot-password__btn:hover {
   text-decoration: none;
 }
-#sign-in .container .sign-in-content__login {
+#sign-up .container .sign-up-content__login {
   margin-top: 16px;
 }
-#sign-in .container .sign-in-content__forget-login {
+#sign-up .container .sign-up-content__register {
+  margin-top: 16px;
+}
+#sign-up .container .sign-up-content__forget-login {
   height: auto !important;
 }
-#sign-in .container .sign-in-content--login-btn {
+#sign-up .container .sign-up-content--login-btn {
   width: 100%;
   height: 48px;
   margin-top: 6px;
@@ -274,11 +277,11 @@
   font-weight: 600;
   line-height: 20px;
 }
-#sign-in .container .sign-in-content--login-btn:hover {
+#sign-up .container .sign-up-content--login-btn:hover {
   background-color: rgb(56, 56, 56);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--rlogin-btn {
+#sign-up .container .sign-up-content--register-btn {
   width: 100%;
   height: 48px;
   margin-top: 6px;
@@ -293,27 +296,46 @@
   font-weight: 600;
   line-height: 20px;
 }
-#sign-in .container .sign-in-content--rlogin-btn:hover {
+#sign-up .container .sign-up-content--register-btn:hover {
   background-color: rgb(56, 56, 56);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content__or {
+#sign-up .container .sign-up-content--rlogin-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 6px;
+  padding: 16px 32px;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#sign-up .container .sign-up-content--rlogin-btn:hover {
+  background-color: rgb(56, 56, 56);
+  cursor: pointer;
+}
+#sign-up .container .sign-up-content__or {
   padding: 15px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#sign-in .container .sign-in-content__or span {
+#sign-up .container .sign-up-content__or span {
   font-size: 14px;
   line-height: 20px;
   color: rgb(33, 33, 33);
 }
-#sign-in .container .sign-in-content--or-line {
+#sign-up .container .sign-up-content--or-line {
   width: 176px;
   height: 0.85px;
   background-color: rgb(230, 230, 230);
 }
-#sign-in .container .sign-in-content--facebook-btn {
+#sign-up .container .sign-up-content--facebook-btn {
   width: 100%;
   height: 48px;
   background-color: rgb(66, 103, 178);
@@ -325,21 +347,21 @@
   align-items: center;
   gap: 8px;
 }
-#sign-in .container .sign-in-content--facebook-btn:hover {
+#sign-up .container .sign-up-content--facebook-btn:hover {
   background-color: rgb(52, 88, 159);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--facebook-btn i {
+#sign-up .container .sign-up-content--facebook-btn i {
   font-size: 20px;
   color: #fff;
 }
-#sign-in .container .sign-in-content--facebook-btn span {
+#sign-up .container .sign-up-content--facebook-btn span {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   color: #fff;
 }
-#sign-in .container .sign-in-content--google-btn {
+#sign-up .container .sign-up-content--google-btn {
   width: 100%;
   height: 48px;
   background-color: rgb(66, 133, 244);
@@ -352,21 +374,21 @@
   align-items: center;
   gap: 8px;
 }
-#sign-in .container .sign-in-content--google-btn:hover {
+#sign-up .container .sign-up-content--google-btn:hover {
   background-color: rgb(46, 118, 233);
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--google-btn i {
+#sign-up .container .sign-up-content--google-btn i {
   font-size: 18px;
   color: #fff;
 }
-#sign-in .container .sign-in-content--google-btn span {
+#sign-up .container .sign-up-content--google-btn span {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   color: #fff;
 }
-#sign-in .container .sign-in-content__register {
+#sign-up .container .sign-up-content__register {
   margin: 20px 0px 4px 0px;
   width: 100%;
   height: 24px;
@@ -374,12 +396,12 @@
   justify-content: center;
   align-items: center;
 }
-#sign-in .container .sign-in-content__register span {
+#sign-up .container .sign-up-content__register span {
   font-size: 16px;
   line-height: 24px;
   color: rgb(90, 90, 90);
 }
-#sign-in .container .sign-in-content__login {
+#sign-up .container .sign-up-content__login {
   margin: 20px 0px 4px 0px;
   width: 100%;
   height: 24px;
@@ -387,12 +409,12 @@
   justify-content: center;
   align-items: center;
 }
-#sign-in .container .sign-in-content__login span {
+#sign-up .container .sign-up-content__login span {
   font-size: 16px;
   line-height: 24px;
   color: rgb(90, 90, 90);
 }
-#sign-in .container .sign-in-content--register-btn {
+#sign-up .container .sign-up-content--register-modal-btn {
   width: 65.563px;
   height: 24px;
   margin-left: 6px;
@@ -404,11 +426,11 @@
   line-height: 24px;
   text-decoration: underline;
 }
-#sign-in .container .sign-in-content--register-btn:hover {
+#sign-up .container .sign-up-content--register-modal-btn:hover {
   text-decoration: none;
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--login-modal-btn {
+#sign-up .container .sign-up-content--login-modal-btn {
   width: 65.563px;
   height: 24px;
   border: none;
@@ -419,11 +441,11 @@
   line-height: 24px;
   text-decoration: underline;
 }
-#sign-in .container .sign-in-content--login-modal-btn:hover {
+#sign-up .container .sign-up-content--login-modal-btn:hover {
   text-decoration: none;
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--forgot-login-modal-btn {
+#sign-up .container .sign-up-content--forgot-login-modal-btn {
   width: 65.563px;
   height: 24px;
   border: none;
@@ -434,11 +456,11 @@
   line-height: 24px;
   text-decoration: underline;
 }
-#sign-in .container .sign-in-content--forgot-login-modal-btn:hover {
+#sign-up .container .sign-up-content--forgot-login-modal-btn:hover {
   text-decoration: none;
   cursor: pointer;
 }
-#sign-in .container .sign-in-content--register-modal-btn {
+#sign-up .container .sign-up-content--register-modal-btn {
   width: 65.563px;
   height: 24px;
   margin-left: 6px;
@@ -450,47 +472,11 @@
   line-height: 24px;
   text-decoration: underline;
 }
-#sign-in .container .sign-in-content--register-modal-btn:hover {
+#sign-up .container .sign-up-content--register-modal-btn:hover {
   text-decoration: none;
   cursor: pointer;
 }
-#sign-in .container .login-modal {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.62);
-}
-#sign-in .container .login-modal__content {
-  height: 553.6px;
-  background-color: #fefefe;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #888;
-  border-radius: 10px;
-  overflow-y: scroll;
-}
-#sign-in .container .login-modal .close {
-  color: #aaa;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 8px;
-  font-size: 36px;
-  font-weight: bold;
-}
-#sign-in .container .login-modal .close:hover,
-#sign-in .container .login-modal .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-#sign-in .container .register-modal {
+#sign-up .container .register-modal {
   display: none;
   position: fixed;
   z-index: 101;
@@ -500,7 +486,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.62);
 }
-#sign-in .container .register-modal__content {
+#sign-up .container .register-modal__content {
   height: 553.6px;
   background-color: #fefefe;
   position: absolute;
@@ -510,7 +496,7 @@
   border: 1px solid #888;
   border-radius: 10px;
 }
-#sign-in .container .register-modal .close {
+#sign-up .container .register-modal .close {
   color: #aaa;
   position: fixed;
   z-index: 999;
@@ -519,42 +505,8 @@
   font-size: 36px;
   font-weight: bold;
 }
-#sign-in .container .register-modal .close:hover,
-#sign-in .container .register-modal .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-#sign-in .container .forgot-modal {
-  display: none;
-  position: fixed;
-  z-index: 101;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.62);
-}
-#sign-in .container .forgot-modal__content {
-  background-color: #fefefe;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #888;
-  border-radius: 10px;
-}
-#sign-in .container .forgot-modal .close {
-  color: #aaa;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 8px;
-  font-size: 36px;
-  font-weight: bold;
-}
-#sign-in .container .forgot-modal .close:hover,
-#sign-in .container .forgot-modal .close:focus {
+#sign-up .container .register-modal .close:hover,
+#sign-up .container .register-modal .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -631,4 +583,4 @@
 footer {
   position: relative;
   top: 161px;
-}/*# sourceMappingURL=sign-in.css.map */
+}/*# sourceMappingURL=sign-up.css.map */
