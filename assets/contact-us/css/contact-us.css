@@ -197,4 +197,96 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+}
+#contact-us .container .contact-us-content .get-in-touch__send-message {
+  margin-top: 20px;
+}
+#contact-us .container .contact-us-content .get-in-touch--send-message {
+  width: 173.21px;
+  height: 56px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+#contact-us .container .contact-us-content .get-in-touch--send-message:hover {
+  background-color: rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+#your-inbox {
+  position: relative;
+  top: 161px;
+}
+#your-inbox .your-inbox-container {
+  padding: 64px 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  background-color: rgb(249, 249, 249);
+}
+#your-inbox .your-inbox-container__text h3 {
+  margin-bottom: 14px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgb(33, 33, 33);
+}
+#your-inbox .your-inbox-container__text p {
+  font-size: 14px;
+  line-height: 28px;
+  color: rgb(90, 90, 90);
+}
+#your-inbox .your-inbox-container form {
+  display: flex;
+}
+#your-inbox .your-inbox-container form input {
+  padding: 8px 28px;
+  width: 407.188px;
+  height: 56px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(29, 30, 31);
+  background-color: #fff;
+  border: 1px solid rgba(90, 90, 90, 0.2);
+  outline: none;
+  border-radius: 6px;
+}
+#your-inbox .your-inbox-container form input:focus-within {
+  border: 1px solid rgb(66, 66, 66);
+}
+#your-inbox .your-inbox-container form button {
+  margin-left: 8px;
+  padding: 16px 32px;
+  background-color: rgb(33, 33, 33);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#your-inbox .your-inbox-container form button:hover {
+  opacity: 0.85;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+#your-inbox .your-inbox-container form button:hover span {
+  opacity: 1;
+}
+#your-inbox .your-inbox-container form button span {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  top: 161px;
 }/*# sourceMappingURL=contact-us.css.map */

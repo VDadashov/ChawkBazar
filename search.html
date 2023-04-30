@@ -1036,190 +1036,333 @@
         <div class="header-line"></div>
     </header>
 
-    <section id="product-filters">
+    <section id="shop">
         <div class="container">
-            <div class="product-filters-content">
-                <div class="product-filters-part-one">
-                    <ul type="none" class="product-filters-part-one-content">
-                        <li class="product-filters-part-one-list">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="product-filters-part-one-list">  
-                            /
-                        </li>
-                        <li class="product-filters-part-one-list">
-                            <a href="#">Search</a>
-                        </li>
-                    </ol>
+            <div class="shop-content">
+                <div class="product-filters-content">
+                    <div class="product-filters-part-one">
+                        <ul type="none" class="product-filters-part-one-content">
+                            <li class="product-filters-part-one-list">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="product-filters-part-one-list">  
+                                /
+                            </li>
+                            <li class="product-filters-part-one-list">
+                                <a href="#">Search</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="product-filters-two-content">
+                        <div class="product-filters-head">
+                            <h2>Filters</h2>
+                            <button id="clear-btn">Clear All</button>
+                        </div>
+                        <div class="product-filters-choose">
+            
+                        </div>
+                        <div class="product-filters-category">
+                            <h3>Category</h3>
+                            <label for="product-filters-category-woman">
+                                <input type="checkbox" id="product-filters-category-woman">
+                                <span>Woman</span>
+                            </label>
+                            <label for="product-filters-category-man">
+                                <input type="checkbox" id="product-filters-category-man">
+                                <span>Man</span>
+                            </label>
+                            <label for="product-filters-category-watch">
+                                <input type="checkbox" id="product-filters-category-watch">
+                                <span>Watch</span>
+                            </label>
+                            <label for="product-filters-category-kids">
+                                <input type="checkbox" id="product-filters-category-kids">
+                                <span>Kids</span>
+                            </label>
+                            <label for="product-filters-category-sports">
+                                <input type="checkbox" id="product-filters-category-sports">
+                                <span>Sports</span>
+                            </label>
+                            <label for="product-filters-category-sunglass">
+                                <input type="checkbox" id="product-filters-category-snglass">
+                                <span>Sunglass</span>
+                            </label>
+                            <label for="product-filters-category-bags">
+                                <input type="checkbox" id="product-filters-category-bags">
+                                <span>Bags</span>
+                            </label>
+                            <label for="product-filters-category-sneakers">
+                                <input type="checkbox" id="product-filters-category-sneakers">
+                                <span>Sneakers</span>
+                            </label>
+                        </div>
+                        <div class="product-filters-brands">
+                            <h3>Brands</h3>
+                            <label for="product-filters-brands-shovia">
+                                <input type="checkbox" id="product-filters-brands-shovia">
+                                <span>Shovia</span>
+                            </label>
+                            <label for="product-filters-brands-fusion">
+                                <input type="checkbox" id="product-filters-brands-fusion">
+                                <span>Fusion</span>
+                            </label>
+                            <label for="product-filters-brands-hunter-shoes">
+                                <input type="checkbox" id="product-filters-brands-hunter-shoes">
+                                <span>Hunter Shoes</span>
+                            </label>
+                            <label for="product-filters-brands-club-shoes">
+                                <input type="checkbox" id="product-filters-brands-club-shoes">
+                                <span>Club Shoes</span>
+                            </label>
+                            <label for="product-filters-brands-hoppister">
+                                <input type="checkbox" id="product-filters-brands-hoppister">
+                                <span>Hoppister</span>
+                            </label>
+                            <label for="product-filters-brands-blaze-fashion">
+                                <input type="checkbox" id="product-filters-brands-blaze-fashion">
+                                <span>Blaze Fashion</span>
+                            </label>
+                            <label for="product-filters-brands-elegance">
+                                <input type="checkbox" id="product-filters-brands-elegance">
+                                <span>Elegance</span>
+                            </label>
+                            <label for="product-filters-brands-fashadil">
+                                <input type="checkbox" id="product-filters-brands-fashadil">
+                                <span>Fashadil</span>
+                            </label>
+                        </div>
+                        <div class="product-filters-price">
+                            <h3>Price</h3>
+                            <label for="product-filters-price-under-$50">
+                                <input type="checkbox" id="product-filters-price-under-$50">
+                                <span>Under $50</span>
+                            </label>
+                            <label for="product-filters-price-$50-to-$100">
+                                <input type="checkbox" id="product-filters-price-$50-to-$100">
+                                <span>$50 to $100</span>
+                            </label>
+                            <label for="product-filters-price-$100-to-$150">
+                                <input type="checkbox" id="product-filters-price-$100-to-$150">
+                                <span>$100 to $150</span>
+                            </label>
+                            <label for="product-filters-price-$150-to-$200">
+                                <input type="checkbox" id="product-filters-price-$150-to-$200">
+                                <span>$150 to $200</span>
+                            </label>
+                            <label for="product-filters-price-$200-to-$300">
+                                <input type="checkbox" id="product-filters-price-$200-to-$300">
+                                <span>$200 to $300</span>
+                            </label>
+                            <label for="product-filters-price-$300-to-$500">
+                                <input type="checkbox" id="product-filters-price-$300-to-$500">
+                                <span>$300 to $500</span>
+                            </label>
+                            <label for="product-filters-price-$500-to-$1000">
+                                <input type="checkbox" id="product-filters-price-$500-to-$1000">
+                                <span>$500 to $1000</span>
+                            </label>
+                            <label for="product-filters-price-over-to-$1000">
+                                <input type="checkbox" id="product-filters-price-over-to-$100">
+                                <span>Over to $1000</span>
+                            </label>
+                        </div>
+                        <div class="product-filters-colors">
+                            <h3>Colors</h3>
+                            <label for="product-filters-colors-black">
+                                <input type="checkbox" id="product-filters-colors-black">
+                                <div class="product-filters-colors-black-box"></div>
+                                <span>Black</span>
+                            </label>
+                            <label for="product-filters-colors-blue">
+                                <input type="checkbox" id="product-filters-colors-blue">
+                                <div class="product-filters-colors-blue-box"></div>
+                                <span>Blue</span>
+                            </label>
+                            <label for="product-filters-colors-olive">
+                                <input type="checkbox" id="product-filters-colors-olive">
+                                <div class="product-filters-colors-olive-box"></div>
+                                <span>Olive</span>
+                            </label>
+                            <label for="product-filters-colors-maroon">
+                                <input type="checkbox" id="product-filters-colors-maroon">
+                                <div class="product-filters-colors-maroon-box"></div>
+                                <span>Maroon</span>
+                            </label>
+                            <label for="product-filters-colors-brown">
+                                <input type="checkbox" id="product-filters-colors-brown">
+                                <div class="product-filters-colors-brown-box"></div>
+                                <span>Brown</span>
+                            </label>
+                            <label for="product-filters-colors-white">
+                                <input type="checkbox" id="product-filters-colors-white">
+                                <div class="product-filters-colors-white-box"></div>
+                                <span>White</span>
+                            </label>
+                            <label for="product-filters-colors-gray">
+                                <input type="checkbox" id="product-filters-colors-gray">
+                                <div class="product-filters-colors-gray-box"></div>
+                                <span>Gray</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="product-filters-two-content">
-                    <div class="product-filters-head">
-                        <h2>Filters</h2>
-                        <button id="clear-btn">Clear All</button>
+                <div class="casual-wear">
+                    <div class="casual-wear__head">
+                        <h1>Casual Wear</h1>
+                        <div class="casual-wear--head-selected">
+                            <span>9,608 items</span>
+                            <button>
+                                <span>Popularity</span>
+                                <img src="assets/img/unfold.png" alt="">
+                                <div class="casual-wear--head-selected-choose">
+                                    <ul type="none">
+                                        <li>Sorting Options</li>
+                                        <li>Newest</li>
+                                        <li>Popularity</li>
+                                        <li>Price: low to high</li>
+                                        <li>Price: high to low</li>
+                                    </ul>
+                                </div> 
+                            </button>                         
+                        </div>
                     </div>
-                    <div class="product-filters-choose">
-        
-                    </div>
-                    <div class="product-filters-category">
-                        <h3>Category</h3>
-                        <label for="product-filters-category-woman">
-                            <input type="checkbox" id="product-filters-category-woman">
-                            <span>Woman</span>
-                        </label>
-                        <label for="product-filters-category-man">
-                            <input type="checkbox" id="product-filters-category-man">
-                            <span>Man</span>
-                        </label>
-                        <label for="product-filters-category-watch">
-                            <input type="checkbox" id="product-filters-category-watch">
-                            <span>Watch</span>
-                        </label>
-                        <label for="product-filters-category-kids">
-                            <input type="checkbox" id="product-filters-category-kids">
-                            <span>Kids</span>
-                        </label>
-                        <label for="product-filters-category-sports">
-                            <input type="checkbox" id="product-filters-category-sports">
-                            <span>Sports</span>
-                        </label>
-                        <label for="product-filters-category-sunglass">
-                            <input type="checkbox" id="product-filters-category-snglass">
-                            <span>Sunglass</span>
-                        </label>
-                        <label for="product-filters-category-bags">
-                            <input type="checkbox" id="product-filters-category-bags">
-                            <span>Bags</span>
-                        </label>
-                        <label for="product-filters-category-sneakers">
-                            <input type="checkbox" id="product-filters-category-sneakers">
-                            <span>Sneakers</span>
-                        </label>
-                    </div>
-                    <div class="product-filters-brands">
-                        <h3>Brands</h3>
-                        <label for="product-filters-brands-shovia">
-                            <input type="checkbox" id="product-filters-brands-shovia">
-                            <span>Shovia</span>
-                        </label>
-                        <label for="product-filters-brands-fusion">
-                            <input type="checkbox" id="product-filters-brands-fusion">
-                            <span>Fusion</span>
-                        </label>
-                        <label for="product-filters-brands-hunter-shoes">
-                            <input type="checkbox" id="product-filters-brands-hunter-shoes">
-                            <span>Hunter Shoes</span>
-                        </label>
-                        <label for="product-filters-brands-club-shoes">
-                            <input type="checkbox" id="product-filters-brands-club-shoes">
-                            <span>Club Shoes</span>
-                        </label>
-                        <label for="product-filters-brands-hoppister">
-                            <input type="checkbox" id="product-filters-brands-hoppister">
-                            <span>Hoppister</span>
-                        </label>
-                        <label for="product-filters-brands-blaze-fashion">
-                            <input type="checkbox" id="product-filters-brands-blaze-fashion">
-                            <span>Blaze Fashion</span>
-                        </label>
-                        <label for="product-filters-brands-elegance">
-                            <input type="checkbox" id="product-filters-brands-elegance">
-                            <span>Elegance</span>
-                        </label>
-                        <label for="product-filters-brands-fashadil">
-                            <input type="checkbox" id="product-filters-brands-fashadil">
-                            <span>Fashadil</span>
-                        </label>
-                    </div>
-                    <div class="product-filters-price">
-                        <h3>Price</h3>
-                        <label for="product-filters-price-under-$50">
-                            <input type="checkbox" id="product-filters-price-under-$50">
-                            <span>Under $50</span>
-                        </label>
-                        <label for="product-filters-price-$50-to-$100">
-                            <input type="checkbox" id="product-filters-price-$50-to-$100">
-                            <span>$50 to $100</span>
-                        </label>
-                        <label for="product-filters-price-$100-to-$150">
-                            <input type="checkbox" id="product-filters-price-$100-to-$150">
-                            <span>$100 to $150</span>
-                        </label>
-                        <label for="product-filters-price-$150-to-$200">
-                            <input type="checkbox" id="product-filters-price-$150-to-$200">
-                            <span>$150 to $200</span>
-                        </label>
-                        <label for="product-filters-price-$200-to-$300">
-                            <input type="checkbox" id="product-filters-price-$200-to-$300">
-                            <span>$200 to $300</span>
-                        </label>
-                        <label for="product-filters-price-$300-to-$500">
-                            <input type="checkbox" id="product-filters-price-$300-to-$500">
-                            <span>$300 to $500</span>
-                        </label>
-                        <label for="product-filters-price-$500-to-$1000">
-                            <input type="checkbox" id="product-filters-price-$500-to-$1000">
-                            <span>$500 to $1000</span>
-                        </label>
-                        <label for="product-filters-price-over-to-$1000">
-                            <input type="checkbox" id="product-filters-price-over-to-$100">
-                            <span>Over to $1000</span>
-                        </label>
-                    </div>
-                    <div class="product-filters-colors">
-                        <h3>Colors</h3>
-                        <label for="product-filters-colors-black">
-                            <input type="checkbox" id="product-filters-colors-black">
-                            <div class="product-filters-colors-black-box"></div>
-                            <span>Black</span>
-                        </label>
-                        <label for="product-filters-colors-blue">
-                            <input type="checkbox" id="product-filters-colors-blue">
-                            <div class="product-filters-colors-blue-box"></div>
-                            <span>Blue</span>
-                        </label>
-                        <label for="product-filters-colors-olive">
-                            <input type="checkbox" id="product-filters-colors-olive">
-                            <div class="product-filters-colors-olive-box"></div>
-                            <span>Olive</span>
-                        </label>
-                        <label for="product-filters-colors-maroon">
-                            <input type="checkbox" id="product-filters-colors-maroon">
-                            <div class="product-filters-colors-maroon-box"></div>
-                            <span>Maroon</span>
-                        </label>
-                        <label for="product-filters-colors-brown">
-                            <input type="checkbox" id="product-filters-colors-brown">
-                            <div class="product-filters-colors-brown-box"></div>
-                            <span>Brown</span>
-                        </label>
-                        <label for="product-filters-colors-white">
-                            <input type="checkbox" id="product-filters-colors-white">
-                            <div class="product-filters-colors-white-box"></div>
-                            <span>White</span>
-                        </label>
-                        <label for="product-filters-colors-gray">
-                            <input type="checkbox" id="product-filters-colors-gray">
-                            <div class="product-filters-colors-gray-box"></div>
-                            <span>Gray</span>
-                        </label>
+                    <div class="casual-wear__product-content">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="casual-wear">
-        <div id="casual-wear-text">
-            <h1>Casual Wear</h1>
-            <div id="casual-wear-shorting-options">
-                <span>9,608 items</span>
-                <button id="casual-wear-shorting-options-btn">
-                    <span>Shorting Option</span>
-                    <span><img src="assets/img/up" alt=""></span>
-                </button>
+    <section id="your-inbox">
+        <div class="container">
+            <div class="your-inbox-container">
+                <div class="your-inbox__container__text">
+                    <h3>Get Expert Tips In Your Inbox</h3>
+                    <p>Subscribe to our newsletter and stay updated</p>
+                </div>
+                <form action="#">
+                    <input type="text" placeholder="Write your email here">
+                    <button><span>Subscribe</span></button>
+                </form>
             </div>
         </div>
-        <div class="casual-wear-card"></div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content-one">
+                <div class="footer-chawk-bazar">
+                    <a href="#"><img src="assets/img/logo.svg" alt="footer-logo"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua</p>
+                    <ul type="none" class="footer-chawk-bazar-social-media">
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-instagram"></i></li>
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="footer-chawk-bazar-social-media-exist"><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social</h4>
+                    <ul type="none" class="footer-social-media">
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-facebook"></i>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li class="footer-social-media-link">
+                            <i class="fa-brands fa-youtube"></i>
+                            <a href="#">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul type="none" class="footer-contact-content">
+                        <li class="footer-contact-list">
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li class="footer-contact-list">
+                            <a href="#">yourexample@gmail.com</a>
+                        </li>
+                        <li class="footer-contact-list">
+                            <a href="#">example@gmail.com</a>
+                        </li>
+                        <li class="footer-contact-list">
+                            <a href="#">Call us: +1 254 568-5479</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-about">
+                    <h4>About</h4>
+                    <ul type="none" class="footer-about-content">
+                        <li class="footer-about-list">
+                            <a href="#">Support Center</a>
+                        </li>
+                        <li class="footer-about-list">
+                            <a href="#">Customer Support</a>
+                        </li>
+                        <li class="footer-about-list">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="footer-about-list">
+                            <a href="#">Copyright</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-customer-care">
+                    <h4>Customer Care</h4>
+                    <ul type="none" class="footer-customer-care-content">
+                        <li class="footer-customer-care-list">
+                            <a href="#">FAQ & Helps</a>
+                        </li>
+                        <li class="footer-customer-care-list">
+                            <a href="#">Shipping & Delivery</a>
+                        </li>
+                        <li class="footer-customer-care-list">
+                            <a href="#">Return & Exchanges</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-our-information">
+                    <h4>Our Information</h4>
+                    <ul type="none" class="footer-our-information-content">
+                        <li class="footer-our-information-list">
+                            <a href="#">Privacy policy update</a>
+                        </li>
+                        <li class="footer-our-information-list">
+                            <a href="#">Terms & conditions</a>
+                        </li>
+                        <li class="footer-our-information-list">
+                            <a href="#">Return Policy</a>
+                        </li>
+                        <li class="footer-our-information-list">
+                            <a href="#">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line-footer"></div>
+            <div class="footer-content-two">
+                <p>Copyright &copy; 2023 <span><a href="https://redq.io/">REDQ</a></span> All rights reserved</p>
+                <ul type="none" class="footer-content-two-card">
+                    <li><a href="#"><img src="assets/img/mastercard.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/visa.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/paypal.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/jcb.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/skrill.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/search.js"></script>
 </body>
 </html>
