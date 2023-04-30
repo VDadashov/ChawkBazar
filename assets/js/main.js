@@ -142,7 +142,7 @@ function getTabListDataOne(products, productContent) {
         </div>
         <div class="hover-card-info">
         <div class="product-card-view">
-            <img src="assets/img/heart.png" alt="">
+            <img src="assets/img/image.png" alt="">
         </div>
         <div class="product-card-wishlist">
             <img src="assets/img/heart.png" alt="">
@@ -174,7 +174,7 @@ function getTabListDataOne(products, productContent) {
         </div>
         <div class="hover-card-info">
         <div class="product-card-view">
-            <img src="assets/img/heart.png" alt="">
+            <img src="assets/img/image.png" alt="">
         </div>
         <div class="product-card-wishlist">
             <img src="assets/img/heart.png" alt="">
@@ -201,7 +201,7 @@ function getTabListDataOne(products, productContent) {
       }else {
         productContent.innerHTML += `<div class='product-card'><div class="hover-card-info">
         <div class="product-card-view">
-            <img src="assets/img/heart.png" alt="">
+            <img src="assets/img/image.png" alt="">
         </div>
         <div class="product-card-wishlist">
             <img src="assets/img/heart.png" alt="">
@@ -513,6 +513,47 @@ function getTabListDataTwo(products, productContent) {
 
 //#endregion
 
+
+
+
+const loginModal = document.querySelector('.login');
+const registermodal = document.querySelector('.register-modal');
+
+loginModal.addEventListener('click',()=>{
+  registermodal.style.display = 'block'
+})
+
+const password = document.querySelector('#sign-up-password-input');
+const modalPassword = document.querySelector('#sign-up-rmodal-password-input');
+const passwordModalOpenEye = document.querySelector('.password-modal-open-eye');
+const passwordModalCloseEye = document.querySelector('.password-modal-close-eye');
+const modalNewTogglePassword = document.querySelectorAll('.modal-custom');
+
+
+
+
+modalNewTogglePassword.forEach(item => {
+  item.addEventListener('click',function(e){
+    const newType = modalPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    modalPassword.setAttribute('type',newType);
+    
+    if(modalPassword.getAttribute('type') === 'password'){
+      passwordModalOpenEye.classList.remove('input--modal-active');
+      passwordModalCloseEye.classList.add('input--modal-active');
+    }else if(modalPassword.getAttribute('type') === 'text'){
+      passwordModalOpenEye.classList.add('input--modal-active');
+      passwordModalCloseEye.classList.remove('input--modal-active');
+    }
+  })
+});
+
+function loginOpenModal() {
+  document.querySelector("#register-modal").style.display = "block";
+}
+
+function loginCloseModal() {
+  document.querySelector("#register-modal").style.display = "none";
+}
 
 
 

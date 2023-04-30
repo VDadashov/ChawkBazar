@@ -82,18 +82,25 @@ let swiper = new Swiper(".slide-container", {
   });
   //#endregion
 
-  // let swiperfFour = new Swiper(".eleventh-section-content-container", {
-//   slidesPerView: 3,
+//   let swiperfFour = new Swiper(".eleventh-section-content-container", {
+//   slidesPerView: 5,
 //   spaceBetween: 10,
-//   sliderPerGroup: 3,
+//   sliderPerGroup: 5,
 //   loop: true,
-//   centerSlide: "true",
-//   fade: "true",
-//   grabCursor: "true",
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
+//     autoHeight : true,
+//     pagination: {
+//       el: ".swiper-pagination-fraction",
+//       clickable: true,
+//       dynamicBullets: true,
+//       type : 'fraction'
+//     },
+//     centerSlide: "true",
+//     fade: "true",
+//     grabCursor: "true",
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
 
 //   breakpoints: {
 //     0: {

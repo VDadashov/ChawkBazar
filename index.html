@@ -16,10 +16,68 @@
 </head>
 
 <body>
+    <div class="product-modal">
+        <div class="product-modal__content">
+            <span class="product-modal--close" onclick="closeProductModal()">&times;</span>
+        </div>
+    </div>
+
+    <div id="register-modal" class="register-modal">
+        <div class="register-modal__content">
+            <span class="close" onclick="loginCloseModal()">&times;</span>
+            <div class="sign-up-content">
+                <div class="sign-up-content__text">
+                    <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+                    <p>Login with your email & password</p>
+                </div>
+                <form action="#">
+                    <div class="sign-up-content__email">
+                        <label for="sign-up-rmodal-email-input">Email</label>
+                        <input id="sign-up-rmodal-email-input" type="text">
+                    </div>
+                    <div class="sign-up-content__password">
+                        <label for="sign-up-rmodal-password-input">Password</label>
+                        <input id="sign-up-rmodal-password-input" type="password">
+                        <i class="fa-regular modal-custom password-modal-open-eye fa-eye"></i>
+                        <i class="fa-regular modal-custom password-modal-close-eye fa-eye-slash input--modal-active"></i>
+                    </div>
+                    <div class="sign-up-content--remember-me">
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <div class="toggle-switch-background">
+                              <div class="toggle-switch-handle"></div>
+                            </div>
+                            <span id="remember-switch">Remember me</span> 
+                          </label>
+                          <div class="forgot-password">
+                            <button class="forgot-password__btn">Forgot password?</button>
+                        </div>                      
+                    </div>
+                    <div class="sign-up-content__login">
+                        <button class="sign-up-content--login-btn">Register</button>
+                    </div>
+                </form>
+                <div class="sign-up-content__or">
+                    <div class="sign-up-content--or-line"></div>
+                    <span>Or</span>
+                    <div class="sign-up-content--or-line"></div>
+                </div>
+                <button class="sign-up-content--facebook-btn">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Login With Facebook</span>
+                </button>
+                <button class="sign-up-content--google-btn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Login With Google</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <div class="first-episode-header">
-                <a href="#"><img class="logo" src="assets/img/logo.svg" alt=""></a>
+                <a href="index.html"><img class="logo" src="assets/img/logo.svg" alt=""></a>
                 <ul type="none">
                     <li>
                         <a href="#">Deals Today</a>
@@ -32,7 +90,7 @@
                         <a href="#">FAQ</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact-us.html">Contact</a>
                     </li>
                 </ul>
                 <div class="search-bar">
@@ -957,10 +1015,10 @@
                                 </div>
                             </li>
                             <li>
-                                <a class="nav-menu-link" href="#">Search</a>
+                                <a class="nav-menu-link" href="search.html">Search</a>
                             </li>
                             <li>
-                                <a class="nav-menu-link" href="#">Shops</a>
+                                <a class="nav-menu-link" href="search.html">Shops</a>
                             </li>
                             <li id="pages">
                                 <a class="nav-menu-link" href="#">Pages</a>
@@ -973,17 +1031,17 @@
                                                 <i class="fa-solid fa-chevron-right"></i>
                                             </a>
                                             <ul type="none">
-                                                <li><a href="#">My Account</a></li>
-                                                <li><a href="#">Sign In</a></li>
-                                                <li><a href="#">Sign Up</a></li>
+                                                <li><a href="my-account.html">My Account</a></li>
+                                                <li><a href="sign-In.html">Sign In</a></li>
+                                                <li><a href="sign-up.html">Sign Up</a></li>
                                                 <li><a href="#">Forget Password</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">FAQ</a></li>
                                         <li><a href="#">Privacy Policy</a></li>
                                         <li><a href="#">Terms & Condition</a></li>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                        <li><a href="checkout.html">Checkout</a></li>
                                         <li><a href="#">Collection</a></li>
                                         <li><a href="#">Category</a></li>
                                         <li><a href="#">Order</a></li>
@@ -1347,9 +1405,18 @@
         <div class="container">
             <h3>Trending Collection</h3>
             <div class="trending-collection">
-                <a href="#"><img src="assets/img/7.webp" alt=""></a>
-                <a href="#"><img src="assets/img/8.webp" alt=""></a>
-                <a href="#"><img src="assets/img/9.webp" alt=""></a>
+                <a href="#">
+                    <img src="assets/img/7.webp" alt="">
+                    <span class="view-collection">View Collection</span>
+                </a>
+                <a href="#">
+                    <img src="assets/img/8.webp" alt="">
+                    <span class="view-collection">View Collection</span>
+                </a>
+                <a href="#">
+                    <img src="assets/img/9.webp" alt="">
+                    <span class="view-collection">View Collection</span>
+                </a>
             </div>
         </div>
     </section>
@@ -1831,6 +1898,168 @@
             </div>
         </div>
     </footer>
+
+    <div class='product-card swiper-slide'>
+        <div class="product-card-in-addition">
+            <p class="dis-count-percent-box">
+                10% OFF
+            </p>
+            <p class="new-arriwal-exist">
+                New Arrival
+            </p>
+        </div>
+        <div class="hover-card-info">
+            <div class="product-card-wishlist">
+                <img src="assets/img/heart.png" alt="">
+            </div>
+            <div class="product-card-modal">
+                <img src="assets/img/left-and-right-arrows.png" alt="">
+            </div>
+        </div>
+        <div class="product-card-img">
+            <img src="assets/img/p-1 (1).webp" alt="${products[i].title}" title="${products[i].title}">
+        </div>
+        <div class="product-card-text">
+            <div class="favorite-point">
+                <img src="assets/img/star.png" alt="">
+                <span>4</span>
+            </div>
+            <h2 class="title"></h2>
+            <p class="content">Fendi began life in 1925 as a fur and leathe...</p>
+            <div class="total-price">
+                <del class="price">$20.00</del>
+                <span class="discount-price">$17.99</span>
+            </div>
+        </div>
+    </div>
+    <div class='product-card swiper-slide'>
+        <div class="product-card-in-addition">
+            <p class="dis-count-percent-box">
+                15% OFF
+            </p>
+        </div>
+        <div class="hover-card-info">
+            <div class="product-card-wishlist">
+                <img src="assets/img/heart.png" alt="">
+            </div>
+            <div class="product-card-modal">
+                <img src="assets/img/left-and-right-arrows.png" alt="">
+            </div>
+        </div>
+        <div class="product-card-img">
+            <img src="assets/img/p-2.webp" alt="${products[i].title}" title="${products[i].title}">
+        </div>
+        <div class="product-card-text">
+            <div class="favorite-point">
+                <img src="assets/img/star.png" alt="">
+                <span>3</span>
+            </div>
+            <h2 class="title">H&M Global Desi</h2>
+            <p class="content">Blue solid woven regular top, curved...</p>
+            <div class="total-price">
+                <del class="price">$40.00</del>
+                <span class="discount-price">$30.00</span>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <div class='product-card swiper-slide'>
+        <div class="product-card-in-addition">
+            <p class="dis-count-percent-box">
+                10% OFF
+            </p>
+            <p class="new-arriwal-exist">
+                New Arrival
+            </p>
+        </div>
+        <div class="hover-card-info">
+            <div class="product-card-wishlist">
+                <img src="assets/img/heart.png" alt="">
+            </div>
+            <div class="product-card-modal">
+                <img src="assets/img/left-and-right-arrows.png" alt="">
+            </div>
+        </div>
+        <div class="product-card-img">
+            <img src="assets/img/p-1 (1).webp" alt="${products[i].title}" title="${products[i].title}">
+        </div>
+        <div class="product-card-text">
+            <div class="favorite-point">
+                <img src="assets/img/star.png" alt="">
+                <span>4</span>
+            </div>
+            <h2 class="title"></h2>
+            <p class="content">Fendi began life in 1925 as a fur and leathe...</p>
+            <div class="total-price">
+                <del class="price">$20.00</del>
+                <span class="discount-price">$17.99</span>
+            </div>
+        </div>
+    </div>
+    <div class='product-card swiper-slide'>
+        <div class="product-card-in-addition">
+            <p class="dis-count-percent-box">
+                15% OFF
+            </p>
+        </div>
+        <div class="hover-card-info">
+            <div class="product-card-wishlist">
+                <img src="assets/img/heart.png" alt="">
+            </div>
+            <div class="product-card-modal">
+                <img src="assets/img/left-and-right-arrows.png" alt="">
+            </div>
+        </div>
+        <div class="product-card-img">
+            <img src="assets/img/p-2.webp" alt="${products[i].title}" title="${products[i].title}">
+        </div>
+        <div class="product-card-text">
+            <div class="favorite-point">
+                <img src="assets/img/star.png" alt="">
+                <span>3</span>
+            </div>
+            <h2 class="title">H&M Global Desi</h2>
+            <p class="content">Blue solid woven regular top, curved...</p>
+            <div class="total-price">
+                <del class="price">$40.00</del>
+                <span class="discount-price">$30.00</span>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <div class='product-card swiper-slide'>
+        <div class="product-card-in-addition">
+            <p class="dis-count-percent-box">
+                10% OFF
+            </p>
+            <p class="new-arriwal-exist">
+                New Arrival
+            </p>
+        </div>
+        <div class="hover-card-info">
+            <div class="product-card-wishlist">
+                <img src="assets/img/heart.png" alt="">
+            </div>
+            <div class="product-card-modal">
+                <img src="assets/img/left-and-right-arrows.png" alt="">
+            </div>
+        </div>
+        <div class="product-card-img">
+            <img src="assets/img/p-1 (1).webp" alt="${products[i].title}" title="${products[i].title}">
+        </div>
+        <div class="product-card-text">
+            <div class="favorite-point">
+                <img src="assets/img/star.png" alt="">
+                <span>4</span>
+            </div>
+            <h2 class="title"></h2>
+            <p class="content">Fendi began life in 1925 as a fur and leathe...</p>
+            <div class="total-price">
+                <del class="price">$20.00</del>
+                <span class="discount-price">$17.99</span>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>
