@@ -19,6 +19,67 @@
     <div class="product-modal">
         <div class="product-modal__content">
             <span class="product-modal--close" onclick="closeProductModal()">&times;</span>
+            <div class="product-modal__img">
+                <img src="assets/img/p-3-m (1).png" alt="">
+            </div>
+            <div class="product-modal__text">
+                <div class="product-modal__head">
+                    <h2>Maniac Red Boys</h2>
+                    <p>Children's clothing kids wear is usually more casual than adult clothing, fit play and rest.
+                        Hosiery is usually used. More recently, however, tons of childrenswear is heavily influenced
+                        by
+                        trends in adult fashion</p>
+                    <div class="product-modal__head-price">
+                        <span class="product-modal--dis-count-price">$40.00</span>
+                        <span class="product-modal--price">$50.00</span>
+                    </div>
+                </div>
+                <div class="product-modal__about">
+                    <h3>Size</h3>
+                    <div class="product-modal__size">
+                        <ul class="size-list" type="none">
+                            <li class="size-s product-modal--custom-size">S</li>
+                            <li class="size-m product-modal--custom-size">M</li>
+                            <li class="size-l product-modal--custom-size">L</li>
+                            <li class="size-xl product-modal--custom-size">XL</li>
+                        </ul>
+                    </div>
+                    <div class="product-modal__color">
+                        <h3>Color</h3>
+                        <div class="product-modal__color-box-content">
+                            <ul type="none" class="color-list">
+                                <li class="product-modal--color-box">
+                                    <div class="orange"></div>
+                                </li>
+                                <li class="product-modal--color-box">
+                                    <div class="pink"></div>
+                                </li>
+                                <li class="product-modal--color-box">
+                                    <div class="purple"></div>
+                                </li>
+                                <li class="product-modal--color-box">
+                                    <div class="red"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-modal__add-to-card">
+                    <div class="product-modal--count">
+                        <button id="count-decrease">−</button>
+                        <span class="product-modal__count">1</span>
+                        <button id="count-increase">+</button>
+                    </div>
+                    <div class="product-modal--add-to-card-btn">
+                        Add to card
+                    </div>
+                </div>
+                <div class="product-modal__view-details">
+                    <button class="product-modal--view-btn">
+                        View Details
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -39,19 +100,20 @@
                         <label for="sign-up-rmodal-password-input">Password</label>
                         <input id="sign-up-rmodal-password-input" type="password">
                         <i class="fa-regular modal-custom password-modal-open-eye fa-eye"></i>
-                        <i class="fa-regular modal-custom password-modal-close-eye fa-eye-slash input--modal-active"></i>
+                        <i
+                            class="fa-regular modal-custom password-modal-close-eye fa-eye-slash input--modal-active"></i>
                     </div>
                     <div class="sign-up-content--remember-me">
                         <label class="toggle-switch">
                             <input type="checkbox">
                             <div class="toggle-switch-background">
-                              <div class="toggle-switch-handle"></div>
+                                <div class="toggle-switch-handle"></div>
                             </div>
-                            <span id="remember-switch">Remember me</span> 
-                          </label>
-                          <div class="forgot-password">
+                            <span id="remember-switch">Remember me</span>
+                        </label>
+                        <div class="forgot-password">
                             <button class="forgot-password__btn">Forgot password?</button>
-                        </div>                      
+                        </div>
                     </div>
                     <div class="sign-up-content__login">
                         <button class="sign-up-content--login-btn">Register</button>
@@ -1899,167 +1961,10 @@
         </div>
     </footer>
 
-    <div class='product-card swiper-slide'>
-        <div class="product-card-in-addition">
-            <p class="dis-count-percent-box">
-                10% OFF
-            </p>
-            <p class="new-arriwal-exist">
-                New Arrival
-            </p>
-        </div>
-        <div class="hover-card-info">
-            <div class="product-card-wishlist">
-                <img src="assets/img/heart.png" alt="">
-            </div>
-            <div class="product-card-modal">
-                <img src="assets/img/left-and-right-arrows.png" alt="">
-            </div>
-        </div>
-        <div class="product-card-img">
-            <img src="assets/img/p-1 (1).webp" alt="${products[i].title}" title="${products[i].title}">
-        </div>
-        <div class="product-card-text">
-            <div class="favorite-point">
-                <img src="assets/img/star.png" alt="">
-                <span>4</span>
-            </div>
-            <h2 class="title"></h2>
-            <p class="content">Fendi began life in 1925 as a fur and leathe...</p>
-            <div class="total-price">
-                <del class="price">$20.00</del>
-                <span class="discount-price">$17.99</span>
-            </div>
-        </div>
-    </div>
-    <div class='product-card swiper-slide'>
-        <div class="product-card-in-addition">
-            <p class="dis-count-percent-box">
-                15% OFF
-            </p>
-        </div>
-        <div class="hover-card-info">
-            <div class="product-card-wishlist">
-                <img src="assets/img/heart.png" alt="">
-            </div>
-            <div class="product-card-modal">
-                <img src="assets/img/left-and-right-arrows.png" alt="">
-            </div>
-        </div>
-        <div class="product-card-img">
-            <img src="assets/img/p-2.webp" alt="${products[i].title}" title="${products[i].title}">
-        </div>
-        <div class="product-card-text">
-            <div class="favorite-point">
-                <img src="assets/img/star.png" alt="">
-                <span>3</span>
-            </div>
-            <h2 class="title">H&M Global Desi</h2>
-            <p class="content">Blue solid woven regular top, curved...</p>
-            <div class="total-price">
-                <del class="price">$40.00</del>
-                <span class="discount-price">$30.00</span>
-            </div>
-        </div>
-        <!-- <div class="swiper-pagination"></div> -->
-    </div>
-    <div class='product-card swiper-slide'>
-        <div class="product-card-in-addition">
-            <p class="dis-count-percent-box">
-                10% OFF
-            </p>
-            <p class="new-arriwal-exist">
-                New Arrival
-            </p>
-        </div>
-        <div class="hover-card-info">
-            <div class="product-card-wishlist">
-                <img src="assets/img/heart.png" alt="">
-            </div>
-            <div class="product-card-modal">
-                <img src="assets/img/left-and-right-arrows.png" alt="">
-            </div>
-        </div>
-        <div class="product-card-img">
-            <img src="assets/img/p-1 (1).webp" alt="${products[i].title}" title="${products[i].title}">
-        </div>
-        <div class="product-card-text">
-            <div class="favorite-point">
-                <img src="assets/img/star.png" alt="">
-                <span>4</span>
-            </div>
-            <h2 class="title"></h2>
-            <p class="content">Fendi began life in 1925 as a fur and leathe...</p>
-            <div class="total-price">
-                <del class="price">$20.00</del>
-                <span class="discount-price">$17.99</span>
-            </div>
-        </div>
-    </div>
-    <div class='product-card swiper-slide'>
-        <div class="product-card-in-addition">
-            <p class="dis-count-percent-box">
-                15% OFF
-            </p>
-        </div>
-        <div class="hover-card-info">
-            <div class="product-card-wishlist">
-                <img src="assets/img/heart.png" alt="">
-            </div>
-            <div class="product-card-modal">
-                <img src="assets/img/left-and-right-arrows.png" alt="">
-            </div>
-        </div>
-        <div class="product-card-img">
-            <img src="assets/img/p-2.webp" alt="${products[i].title}" title="${products[i].title}">
-        </div>
-        <div class="product-card-text">
-            <div class="favorite-point">
-                <img src="assets/img/star.png" alt="">
-                <span>3</span>
-            </div>
-            <h2 class="title">H&M Global Desi</h2>
-            <p class="content">Blue solid woven regular top, curved...</p>
-            <div class="total-price">
-                <del class="price">$40.00</del>
-                <span class="discount-price">$30.00</span>
-            </div>
-        </div>
-        <!-- <div class="swiper-pagination"></div> -->
-    </div>
-    <div class='product-card swiper-slide'>
-        <div class="product-card-in-addition">
-            <p class="dis-count-percent-box">
-                10% OFF
-            </p>
-            <p class="new-arriwal-exist">
-                New Arrival
-            </p>
-        </div>
-        <div class="hover-card-info">
-            <div class="product-card-wishlist">
-                <img src="assets/img/heart.png" alt="">
-            </div>
-            <div class="product-card-modal">
-                <img src="assets/img/left-and-right-arrows.png" alt="">
-            </div>
-        </div>
-        <div class="product-card-img">
-            <img src="assets/img/p-1 (1).webp" alt="${products[i].title}" title="${products[i].title}">
-        </div>
-        <div class="product-card-text">
-            <div class="favorite-point">
-                <img src="assets/img/star.png" alt="">
-                <span>4</span>
-            </div>
-            <h2 class="title"></h2>
-            <p class="content">Fendi began life in 1925 as a fur and leathe...</p>
-            <div class="total-price">
-                <del class="price">$20.00</del>
-                <span class="discount-price">$17.99</span>
-            </div>
-        </div>
-    </div>
+
+
+
+
 
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/slider.js"></script>

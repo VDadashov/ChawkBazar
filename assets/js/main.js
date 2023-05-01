@@ -224,7 +224,6 @@ function getTabListDataOne(products, productContent) {
         <span class="discount-price">${products[i].totalPrice.price}</span>
         </div></div>`
       }
-    
     }
   } catch (error) {
     console.log('kidsCollection data si gelmedi');
@@ -514,7 +513,7 @@ function getTabListDataTwo(products, productContent) {
 //#endregion
 
 
-
+// --------------------------------------------
 
 const loginModal = document.querySelector('.login');
 const registermodal = document.querySelector('.register-modal');
@@ -528,8 +527,6 @@ const modalPassword = document.querySelector('#sign-up-rmodal-password-input');
 const passwordModalOpenEye = document.querySelector('.password-modal-open-eye');
 const passwordModalCloseEye = document.querySelector('.password-modal-close-eye');
 const modalNewTogglePassword = document.querySelectorAll('.modal-custom');
-
-
 
 
 modalNewTogglePassword.forEach(item => {
@@ -555,8 +552,33 @@ function loginCloseModal() {
   document.querySelector("#register-modal").style.display = "none";
 }
 
+// ------------------------------------
 
+const sizeList = document.querySelectorAll('.product-modal--custom-size');
 
+sizeList.forEach(item => {
+    item.addEventListener('click',()=>{
+        sizeList.forEach(item => {
+            item.classList.remove('product-modal--active-size');
+        });
+        item.classList.add('product-modal--active-size');
+    })
+});
+
+// ----------------------------------------
+
+const productCardModal = document.querySelectorAll('.product-card-modal');
+const productModal = document.querySelector('.product-modal');
+
+productCardModal.forEach(item => {
+  item.addEventListener('click',()=>{
+    productModal.style.display = "block"
+  })
+});
+
+function closeProductModal() {
+  productModal.style.display = "none";
+}
 
 
 
